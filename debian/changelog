@@ -1,4 +1,4 @@
-kde4libs (4:4.14.17~) UNRELEASED; urgency=medium
+kde4libs (4:4.14.17-0~) UNRELEASED; urgency=medium
 
   [ Maximiliano Curia ]
   * Add new patch: set_cmake_policies.patch (Closes: #809532) Thanks to
