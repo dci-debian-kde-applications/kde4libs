@@ -1,14 +1,27 @@
-Index: kde4libs/cmake/modules/KDE4Macros.cmake
+Index: kde4libs-4.14.17/cmake/modules/KDE4Macros.cmake
 ===================================================================
---- kde4libs.orig/cmake/modules/KDE4Macros.cmake	2016-02-05 09:47:22.941042324 +0100
-+++ kde4libs/cmake/modules/KDE4Macros.cmake	2016-02-05 09:50:00.190607408 +0100
-@@ -32,6 +32,9 @@
- # Redistribution and use is allowed according to the terms of the BSD license.
- # For details see the accompanying COPYING-CMAKE-SCRIPTS file.
+--- kde4libs-4.14.17.orig/cmake/modules/KDE4Macros.cmake
++++ kde4libs-4.14.17/cmake/modules/KDE4Macros.cmake
+@@ -1011,6 +1011,11 @@ endmacro(_KDE4_ADD_MANIFEST)
  
-+cmake_policy(SET CMP0054 OLD)
-+cmake_policy(SET CMP0064 OLD)
+ macro (KDE4_ADD_EXECUTABLE _target_NAME)
+ 
++   if (POLICY CMP0064)
++      cmake_policy(PUSH)
++      cmake_policy(SET CMP0064 OLD)
++   endif()
 +
- # This is for versions of automoc4 which don't provide these two macros.
- # If such a version is used, just use the "old" style automoc handling. 
- if(NOT COMMAND _AUTOMOC4_KDE4_PRE_TARGET_HANDLING)
+    kde4_check_executable_params( _SRCS _nogui _test ${ARGN})
+ 
+    set(_add_executable_param)
+@@ -1063,6 +1068,10 @@ macro (KDE4_ADD_EXECUTABLE _target_NAME)
+       target_link_libraries(${_target_NAME} ${QT_QTMAIN_LIBRARY})
+    endif (WIN32)
+ 
++   if(POLICY CMP0064)
++      cmake_policy(POP)
++   endif()
++
+ endmacro (KDE4_ADD_EXECUTABLE)
+ 
+ 
