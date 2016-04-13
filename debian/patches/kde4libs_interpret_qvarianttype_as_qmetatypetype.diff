@@ -1,11 +1,18 @@
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Wed, 13 Apr 2016 16:40:35 +0200
+Subject: kde4libs_interpret_qvarianttype_as_qmetatypetype
+
 commit b722fc7feb2ef719f221784598b5c586591ca7b6
 Author: Maximiliano Curia <maxy@debian.org>
 Date:   Tue Dec 10 08:47:36 2013 -0300
 
     Interpret QVariant::Tpe as QMetaType::type
+---
+ kdecore/config/kconfiggroup.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/kdecore/config/kconfiggroup.cpp b/kdecore/config/kconfiggroup.cpp
-index a804d37..b1b09e4 100644
+index e384917..981b094 100644
 --- a/kdecore/config/kconfiggroup.cpp
 +++ b/kdecore/config/kconfiggroup.cpp
 @@ -208,7 +208,7 @@ QVariant KConfigGroup::convertToQVariant(const char *pKey, const QByteArray& val

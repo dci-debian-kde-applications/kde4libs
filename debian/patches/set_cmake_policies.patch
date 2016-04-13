@@ -1,7 +1,16 @@
-Index: kde4libs-4.14.17/cmake/modules/KDE4Macros.cmake
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Wed, 13 Apr 2016 16:40:35 +0200
+Subject: set_cmake_policies
+
 ===================================================================
---- kde4libs-4.14.17.orig/cmake/modules/KDE4Macros.cmake
-+++ kde4libs-4.14.17/cmake/modules/KDE4Macros.cmake
+---
+ cmake/modules/KDE4Macros.cmake | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+
+diff --git a/cmake/modules/KDE4Macros.cmake b/cmake/modules/KDE4Macros.cmake
+index 6a75f32..39a2804 100644
+--- a/cmake/modules/KDE4Macros.cmake
++++ b/cmake/modules/KDE4Macros.cmake
 @@ -1011,6 +1011,11 @@ endmacro(_KDE4_ADD_MANIFEST)
  
  macro (KDE4_ADD_EXECUTABLE _target_NAME)

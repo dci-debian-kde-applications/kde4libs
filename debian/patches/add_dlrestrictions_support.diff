@@ -1,8 +1,6 @@
 From: Modestas Vainius <modax@debian.org>
+Date: Wed, 13 Apr 2016 16:40:34 +0200
 Subject: Add DLRestrictions support
-Forwarded: not-needed
-Origin: vendor
-Last-Update: 2013-09-04
 
 The patch adds DLRestrictions compatibility checks to the KPluginLoader::load()
 function. Moreover, a new helper CMake macro is introduced to ease addition of
@@ -19,12 +17,17 @@ kde4deb_dlrestrictions_process_libraries()
 Please that either DEFAULT_DLRESTRICTIONS variable or DLRESTRICITIONS target
 property must have set beforehand. Otherwise, this snippet will have no effect
 on all (or some) the targets.
+---
+ cmake/modules/KDE4Macros.cmake | 11 +++++++++++
+ kdecore/CMakeLists.txt         |  8 ++++++++
+ kdecore/util/kpluginloader.cpp | 32 ++++++++++++++++++++++++++++++++
+ 3 files changed, 51 insertions(+)
 
-Index: kde4libs/cmake/modules/KDE4Macros.cmake
-===================================================================
---- kde4libs.orig/cmake/modules/KDE4Macros.cmake	2015-11-17 14:50:04.707028060 +0100
-+++ kde4libs/cmake/modules/KDE4Macros.cmake	2015-11-17 14:50:04.695028540 +0100
-@@ -1066,10 +1066,14 @@
+diff --git a/cmake/modules/KDE4Macros.cmake b/cmake/modules/KDE4Macros.cmake
+index 26c4788..6a75f32 100644
+--- a/cmake/modules/KDE4Macros.cmake
++++ b/cmake/modules/KDE4Macros.cmake
+@@ -1078,10 +1078,14 @@ macro (KDE4_ADD_LIBRARY _target_NAME _lib_TYPE)
     if (${_lib_TYPE} STREQUAL "SHARED")
        set(_first_SRC)
        set(_add_lib_param SHARED)
@@ -39,7 +42,7 @@ Index: kde4libs/cmake/modules/KDE4Macros.cmake
     endif (${_lib_TYPE} STREQUAL "MODULE")
  
     set(_SRCS ${_first_SRC} ${ARGN})
-@@ -1381,6 +1385,13 @@
+@@ -1393,6 +1397,13 @@ function(KDE4_INSTALL_AUTH_ACTIONS HELPER_ID ACTIONS_FILE)
  
  endfunction(KDE4_INSTALL_AUTH_ACTIONS)
  
@@ -53,11 +56,11 @@ Index: kde4libs/cmake/modules/KDE4Macros.cmake
  
  macro(_KDE4_EXPORT_LIBRARY_DEPENDENCIES _append_or_write _filename)
     message(FATAL_ERROR "_KDE4_EXPORT_LIBRARY_DEPENDENCIES() was an internal macro and has been removed again. Just remove the code which calls it, there is no substitute.")
-Index: kde4libs/kdecore/CMakeLists.txt
-===================================================================
---- kde4libs.orig/kdecore/CMakeLists.txt	2015-11-17 14:50:04.707028060 +0100
-+++ kde4libs/kdecore/CMakeLists.txt	2015-11-17 14:50:04.703028220 +0100
-@@ -412,6 +412,14 @@
+diff --git a/kdecore/CMakeLists.txt b/kdecore/CMakeLists.txt
+index 04221ff..ba1bab2 100644
+--- a/kdecore/CMakeLists.txt
++++ b/kdecore/CMakeLists.txt
+@@ -412,6 +412,14 @@ kde4_add_library(kdecore ${LIBRARY_TYPE} ${kdecore_LIB_SRCS})
  
  target_link_libraries(kdecore LINK_PRIVATE ${QT_QTCORE_LIBRARY} ${QT_QTNETWORK_LIBRARY} ${QT_QTDBUS_LIBRARY} ${QT_QTXML_LIBRARY} ${ZLIB_LIBRARY} ${kdecore_OPTIONAL_LIBS})
  
@@ -72,10 +75,10 @@ Index: kde4libs/kdecore/CMakeLists.txt
  if(WINCE)
    target_link_libraries(kdecore LINK_PRIVATE ${WCECOMPAT_LIBRARIES} Ceshell.lib)
  endif(WINCE)
-Index: kde4libs/kdecore/util/kpluginloader.cpp
-===================================================================
---- kde4libs.orig/kdecore/util/kpluginloader.cpp	2015-11-17 14:50:04.707028060 +0100
-+++ kde4libs/kdecore/util/kpluginloader.cpp	2015-11-17 14:50:04.703028220 +0100
+diff --git a/kdecore/util/kpluginloader.cpp b/kdecore/util/kpluginloader.cpp
+index 43c6376..ad5d8de 100644
+--- a/kdecore/util/kpluginloader.cpp
++++ b/kdecore/util/kpluginloader.cpp
 @@ -31,6 +31,14 @@
  #include <QtCore/QDir>
  #include <QtCore/QFileInfo>
@@ -91,7 +94,7 @@ Index: kde4libs/kdecore/util/kpluginloader.cpp
  extern int kLibraryDebugArea();
  
  class KPluginLoaderPrivate
-@@ -259,6 +267,30 @@
+@@ -259,6 +267,30 @@ bool KPluginLoader::load()
      else
          d->pluginVersion = ~0U;
  

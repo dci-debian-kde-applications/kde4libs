@@ -1,17 +1,21 @@
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Wed, 13 Apr 2016 16:40:33 +0200
+Subject: add_debian_build_type
+
 We get the flags from $(CXXFLAGS) and $(CFLAGS), if we don't remove them we add
 them two times.
 Define NDEBUG, otherwise we get pure debug code. Kfind will start in one instead
 of twenty seconds with this define e.g. because of enabled caching of unknown
 icons.
 ---
- cmake/modules/FindKDE4Internal.cmake |    2 ++
+ cmake/modules/FindKDE4Internal.cmake | 2 ++
  1 file changed, 2 insertions(+)
 
-Index: kde4libs/cmake/modules/FindKDE4Internal.cmake
-===================================================================
---- kde4libs.orig/cmake/modules/FindKDE4Internal.cmake	2015-09-19 02:00:08.537653023 +0200
-+++ kde4libs/cmake/modules/FindKDE4Internal.cmake	2015-09-19 02:00:08.533653184 +0200
-@@ -1170,11 +1170,13 @@
+diff --git a/cmake/modules/FindKDE4Internal.cmake b/cmake/modules/FindKDE4Internal.cmake
+index 7d54b9b..4e39208 100644
+--- a/cmake/modules/FindKDE4Internal.cmake
++++ b/cmake/modules/FindKDE4Internal.cmake
+@@ -1170,11 +1170,13 @@ if (CMAKE_COMPILER_IS_GNUCXX)
     set(CMAKE_CXX_FLAGS_DEBUG          "-g -O2 -fno-reorder-blocks -fno-schedule-insns -fno-inline")
     set(CMAKE_CXX_FLAGS_DEBUGFULL      "-g3 -fno-inline")
     set(CMAKE_CXX_FLAGS_PROFILE        "-g3 -fno-inline -ftest-coverage -fprofile-arcs")
