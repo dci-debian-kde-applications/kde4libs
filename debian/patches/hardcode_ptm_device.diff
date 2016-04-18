@@ -1,9 +1,15 @@
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Wed, 13 Apr 2016 16:40:33 +0200
+Subject: hardcode_ptm_device
+
 In a build environment /dev/ptmx is not always present.
 Bypass build time check as /dev/ptmx is alsways present at runtime.
 ---
- ConfigureChecks.cmake |    8 +-------
+ ConfigureChecks.cmake | 8 +-------
  1 file changed, 1 insertion(+), 7 deletions(-)
 
+diff --git a/ConfigureChecks.cmake b/ConfigureChecks.cmake
+index 2729adb..8d14171 100644
 --- a/ConfigureChecks.cmake
 +++ b/ConfigureChecks.cmake
 @@ -176,13 +176,7 @@ if (UNIX)

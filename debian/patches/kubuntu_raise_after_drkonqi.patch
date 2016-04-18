@@ -1,8 +1,17 @@
-Index: kde4libs/kdeui/util/kcrash.cpp
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Wed, 13 Apr 2016 16:40:35 +0200
+Subject: kubuntu_raise_after_drkonqi
+
 ===================================================================
---- kde4libs.orig/kdeui/util/kcrash.cpp	2015-02-16 10:23:28.265819116 +0100
-+++ kde4libs/kdeui/util/kcrash.cpp	2015-02-16 10:23:28.265819116 +0100
-@@ -223,6 +223,39 @@
+---
+ kdeui/util/kcrash.cpp | 37 ++++++++++++++++++++++++++++++++++++-
+ 1 file changed, 36 insertions(+), 1 deletion(-)
+
+diff --git a/kdeui/util/kcrash.cpp b/kdeui/util/kcrash.cpp
+index cf12933..851764b 100644
+--- a/kdeui/util/kcrash.cpp
++++ b/kdeui/util/kcrash.cpp
+@@ -223,6 +223,39 @@ bool KCrash::isDrKonqiEnabled()
      return s_launchDrKonqi;
  }
  
@@ -42,7 +51,7 @@ Index: kde4libs/kdeui/util/kcrash.cpp
  void
  KCrash::setCrashHandler (HandlerType handler)
  {
-@@ -446,6 +479,7 @@
+@@ -446,6 +479,7 @@ KCrash::defaultCrashHandler (int sig)
        fprintf(stderr, "Unable to start Dr. Konqi\n");
      }
  
@@ -50,7 +59,7 @@ Index: kde4libs/kdeui/util/kcrash.cpp
      _exit(255);
  }
  
-@@ -567,7 +601,8 @@
+@@ -567,7 +601,8 @@ static bool startProcessInternal(int argc, const char *argv[], bool waitAndExit,
                  sleep(1);
              }
          }

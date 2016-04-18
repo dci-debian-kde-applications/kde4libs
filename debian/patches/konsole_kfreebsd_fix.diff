@@ -1,6 +1,16 @@
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Wed, 13 Apr 2016 16:40:34 +0200
+Subject: konsole_kfreebsd_fix
+
 This patch makes konsole work on kfreebsd.
 Without it, konsole doesn't display anything in the terminal area.
 Inspired from http://lists.kde.org/?l=kde-commits&m=122713720905453&w=2
+---
+ kpty/kptydevice.cpp | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/kpty/kptydevice.cpp b/kpty/kptydevice.cpp
+index 1579780..a6422b0 100644
 --- a/kpty/kptydevice.cpp
 +++ b/kpty/kptydevice.cpp
 @@ -44,7 +44,7 @@

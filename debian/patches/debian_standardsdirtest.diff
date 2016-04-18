@@ -1,8 +1,17 @@
-Index: kde4libs/kdecore/tests/kstandarddirstest.cpp
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Wed, 13 Apr 2016 16:40:35 +0200
+Subject: debian_standardsdirtest
+
 ===================================================================
---- kde4libs.orig/kdecore/tests/kstandarddirstest.cpp	2014-01-13 17:03:44.022636603 -0300
-+++ kde4libs/kdecore/tests/kstandarddirstest.cpp	2014-01-13 17:06:33.482281170 -0300
-@@ -105,7 +105,7 @@
+---
+ kdecore/tests/kstandarddirstest.cpp | 12 ++++++------
+ 1 file changed, 6 insertions(+), 6 deletions(-)
+
+diff --git a/kdecore/tests/kstandarddirstest.cpp b/kdecore/tests/kstandarddirstest.cpp
+index bc5c21d..893cf7b 100644
+--- a/kdecore/tests/kstandarddirstest.cpp
++++ b/kdecore/tests/kstandarddirstest.cpp
+@@ -105,7 +105,7 @@ void KStandarddirsTest::testFindResource()
  
      const QString data = KGlobal::dirs()->findResource( "data", "cmake/modules/FindSoprano.cmake" );
      QVERIFY( !data.isEmpty() );
@@ -11,7 +20,7 @@ Index: kde4libs/kdecore/tests/kstandarddirstest.cpp
      QVERIFY( !QDir::isRelativePath(data) );
  }
  
-@@ -140,23 +140,23 @@
+@@ -140,23 +140,23 @@ void KStandarddirsTest::testFindAllResources()
      QVERIFY( !configFiles.isEmpty() );
      QVERIFY( configFiles.count() > 5 ); // I have 9 here
      QVERIFY( oneEndsWith( configFiles, "share/config/kdebugrc" ) );

@@ -1,8 +1,17 @@
-Index: kde4libs/kio/kfile/kpropertiesdialog.cpp
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Wed, 13 Apr 2016 16:40:35 +0200
+Subject: kfreebsd_acl
+
 ===================================================================
---- kde4libs.orig/kio/kfile/kpropertiesdialog.cpp	2014-02-05 15:08:05.955141270 +0100
-+++ kde4libs/kio/kfile/kpropertiesdialog.cpp	2014-02-05 15:08:05.951141176 +0100
-@@ -53,6 +53,15 @@
+---
+ kio/kfile/kpropertiesdialog.cpp | 11 ++++++++++-
+ 1 file changed, 10 insertions(+), 1 deletion(-)
+
+diff --git a/kio/kfile/kpropertiesdialog.cpp b/kio/kfile/kpropertiesdialog.cpp
+index a6573aa..af8d2b0 100644
+--- a/kio/kfile/kpropertiesdialog.cpp
++++ b/kio/kfile/kpropertiesdialog.cpp
+@@ -53,6 +53,15 @@ extern "C" {
  #include <time.h>
  #include <sys/stat.h>
  #include <sys/types.h>
@@ -18,7 +27,7 @@ Index: kde4libs/kio/kfile/kpropertiesdialog.cpp
  }
  #include <unistd.h>
  #include <errno.h>
-@@ -1889,7 +1898,7 @@
+@@ -1889,7 +1898,7 @@ KFilePermissionsPropsPlugin::KFilePermissionsPropsPlugin( KPropertiesDialog *_pr
  static bool fileSystemSupportsACL( const QByteArray& path )
  {
      bool fileSystemSupportsACLs = false;

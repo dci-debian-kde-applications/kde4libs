@@ -1,7 +1,16 @@
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Wed, 13 Apr 2016 16:40:33 +0200
+Subject: debian_menu
+
 Include the Debian menu. Else all would end up under lost & found.
 
 Patch by Sune Vuorela.
+---
+ kded/applications.menu | 7 +++++++
+ 1 file changed, 7 insertions(+)
 
+diff --git a/kded/applications.menu b/kded/applications.menu
+index 2537e39..dfa0f4f 100644
 --- a/kded/applications.menu
 +++ b/kded/applications.menu
 @@ -437,5 +437,12 @@

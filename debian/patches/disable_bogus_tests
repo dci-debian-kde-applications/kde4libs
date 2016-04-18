@@ -1,8 +1,17 @@
-Index: kde4libs/kio/tests/kdirmodeltest.cpp
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Wed, 13 Apr 2016 16:40:35 +0200
+Subject: disable_bogus_tests
+
 ===================================================================
---- kde4libs.orig/kio/tests/kdirmodeltest.cpp	2014-01-14 10:44:58.618653445 -0300
-+++ kde4libs/kio/tests/kdirmodeltest.cpp	2014-01-14 16:34:44.693475607 -0300
-@@ -1039,6 +1039,8 @@
+---
+ kio/tests/kdirmodeltest.cpp | 2 ++
+ 1 file changed, 2 insertions(+)
+
+diff --git a/kio/tests/kdirmodeltest.cpp b/kio/tests/kdirmodeltest.cpp
+index 05024bc..0d81721 100644
+--- a/kio/tests/kdirmodeltest.cpp
++++ b/kio/tests/kdirmodeltest.cpp
+@@ -1039,6 +1039,8 @@ void KDirModelTest::testZipFile() // # 171721
  void KDirModelTest::testSmb()
  {
      const KUrl smbUrl("smb:/");

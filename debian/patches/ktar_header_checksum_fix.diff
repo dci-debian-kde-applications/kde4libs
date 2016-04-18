@@ -1,10 +1,6 @@
 From: Modestas Vainius <modax@debian.org>
+Date: Wed, 13 Apr 2016 16:40:34 +0200
 Subject: Use unsigned arithmetic when calculating tar header checksum
-Forwarded: yes
-Bug: https://bugs.kde.org/show_bug.cgi?id=266141
-Bug-Debian: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=612675
-Last-Update: 2011-06-14
-Origin: vendor
 
 According to the ustar specification, implementations must use unsigned
 arithmetic when calculating checksum field of the tar header record. KTar prior
@@ -15,10 +11,15 @@ However, there are more broken tar implementations out there (including former
 KTar itself) so the patch also makes KTar to verify checksums using both
 unsigned and signed arithmetic when reading archives. If either of checksums
 matches, archive is accepted.
+---
+ kdecore/io/ktar.cpp | 55 +++++++++++++++++++++++++++++++++++------------------
+ 1 file changed, 36 insertions(+), 19 deletions(-)
 
+diff --git a/kdecore/io/ktar.cpp b/kdecore/io/ktar.cpp
+index 142a80a..ed739e8 100644
 --- a/kdecore/io/ktar.cpp
 +++ b/kdecore/io/ktar.cpp
-@@ -184,26 +184,41 @@ qint64 KTar::KTarPrivate::readRawHeader(
+@@ -184,26 +184,41 @@ qint64 KTar::KTarPrivate::readRawHeader( char *buffer ) {
      if (strncmp(buffer + 257, "ustar", 5)) {
        // The magic isn't there (broken/old tars), but maybe a correct checksum?
  
@@ -76,7 +77,7 @@ matches, archive is accepted.
          return -1;
        }
      }/*end if*/
-@@ -653,10 +668,12 @@ void KTar::KTarPrivate::fillBuffer( char
+@@ -653,10 +668,12 @@ void KTar::KTarPrivate::fillBuffer( char * buffer,
    // group
    strcpy( buffer + 0x129, gname );
  
