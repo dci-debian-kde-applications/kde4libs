@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.14.12 amd64
+# SymbolsHelper-Confirmed: 4:4.14.18 amd64 armhf i386
 libkjs.so.4 libkjsapi4 #MINVER#
 * Build-Depends-Package: kdelibs5-dev
  _ZN3KJS10Identifier11addSlowCaseEPNS_7UString3RepE@Base 4:4.3.4
@@ -217,6 +217,7 @@ libkjs.so.4 libkjsapi4 #MINVER#
  _ZN3KJS7UString6appendERKS0_@Base 4:4.3.4
  _ZN3KJS7UString6appendERKS0_ii@Base 4:4.3.4
  _ZN3KJS7UString6appendEt@Base 4:4.3.4
+ _ZN3KJS7UString9maxUCharsEv@Base 4:4.14.18
  _ZN3KJS7UStringC1ENS0_5EmptyE@Base 4:4.3.4
  _ZN3KJS7UStringC1EPKNS_5UCharEi@Base 4:4.3.4
  _ZN3KJS7UStringC1EPKc@Base 4:4.3.4
