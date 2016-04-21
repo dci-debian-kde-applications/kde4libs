@@ -1,6 +1,6 @@
-kde4libs (4:4.14.18-1~2.gbpf39ecb) UNRELEASED; urgency=medium
+kde4libs (4:4.14.19-1~1.gbp3aaac0) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @f39ecb92a1ac9111fa05a24e7cecc19b1a21ff86 **
+  ** SNAPSHOT build @3aaac07cbbe0815c2805540d7184b13bd2ec9633 **
 
   [ Maximiliano Curia ]
   * Add new patch: set_cmake_policies.patch (Closes: #809532) Thanks to
@@ -15,8 +15,9 @@ kde4libs (4:4.14.18-1~2.gbpf39ecb) UNRELEASED; urgency=medium
   * Refresh patches
   * Revert the mark private symbols
   * Update symbols files.
+  * UNRELEASED
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Mon, 18 Apr 2016 16:45:32 +0200
+ -- Automatic packaging <jenkins@amadeus.gnuservers.com.ar>  Thu, 21 Apr 2016 03:26:40 +0200
 
 kde4libs (4:4.14.16-1) experimental; urgency=medium
 
