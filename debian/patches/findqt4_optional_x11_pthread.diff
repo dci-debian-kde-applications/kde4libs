@@ -1,8 +1,14 @@
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Wed, 13 Apr 2016 16:40:34 +0200
+Subject: findqt4_optional_x11_pthread
+
 Qt doesn't expose the X11 headers to the world, so no need to make it required.
 ---
- cmake/modules/Qt4ConfigDependentSettings.cmake |    3 +--
+ cmake/modules/Qt4ConfigDependentSettings.cmake | 3 +--
  1 file changed, 1 insertion(+), 2 deletions(-)
 
+diff --git a/cmake/modules/Qt4ConfigDependentSettings.cmake b/cmake/modules/Qt4ConfigDependentSettings.cmake
+index b5462e7..43cedae 100644
 --- a/cmake/modules/Qt4ConfigDependentSettings.cmake
 +++ b/cmake/modules/Qt4ConfigDependentSettings.cmake
 @@ -27,10 +27,9 @@

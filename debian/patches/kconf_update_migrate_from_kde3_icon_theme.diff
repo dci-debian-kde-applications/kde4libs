@@ -1,19 +1,45 @@
 From: Modestas Vainius <modax@debian.org>
+Date: Wed, 13 Apr 2016 16:40:33 +0200
 Subject: Migrate from crystalsvg and similar KDE 4 incompatible icon themes
-Bug-Debian: http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=588374
-Forwarded: no
-Origin: vendor
-Last-Update: 2013-09-04
 
 The patch adds a kconf_update script which resets global icon theme to default
 if current one does not have some standard icons (e.g. document-open etc.)
 Useful when upgrading from KDE 3 to KDE 4 because default KDE 3 theme
 (crystalsvg) is exactly like this, i.e. incompatible with KDE 4.
+---
+ kdeui/CMakeLists.txt                               |  10 ++
+ .../kconf_update_migrate_from_kde3_icon_theme.cpp  | 157 +++++++++++++++++++++
+ kdeui/kdeui.upd                                    |   6 +
+ 3 files changed, 173 insertions(+)
+ create mode 100644 kdeui/icons/kconf_update_migrate_from_kde3_icon_theme.cpp
+ create mode 100644 kdeui/kdeui.upd
 
-Index: kde4libs/kdeui/icons/kconf_update_migrate_from_kde3_icon_theme.cpp
-===================================================================
---- /dev/null	1970-01-01 00:00:00.000000000 +0000
-+++ kde4libs/kdeui/icons/kconf_update_migrate_from_kde3_icon_theme.cpp	2015-02-16 10:18:58.304627273 +0100
+diff --git a/kdeui/CMakeLists.txt b/kdeui/CMakeLists.txt
+index d6ec8b4..4d99a51 100644
+--- a/kdeui/CMakeLists.txt
++++ b/kdeui/CMakeLists.txt
+@@ -470,6 +470,16 @@ set_target_properties(kdeui PROPERTIES VERSION ${KDE_NON_GENERIC_LIB_VERSION}
+                        )
+ 
+ install(TARGETS kdeui EXPORT kdelibsLibraryTargets ${INSTALL_TARGETS_DEFAULT_ARGS})
++
++# kconf_update to migrate from crystalsvg and the like KDE 4 incompatible icon
++# themes when upgrading to KDE SC 4
++kde4_add_executable(migrate_from_kde3_icon_theme icons/kconf_update_migrate_from_kde3_icon_theme.cpp)
++target_link_libraries(migrate_from_kde3_icon_theme ${QT_QTCORE_LIBRARY}
++                                                   ${KDE4_KDECORE_LIBRRY}
++                                                   ${KDE4_KDEUI_LIBRARY})
++install(TARGETS migrate_from_kde3_icon_theme DESTINATION ${LIB_INSTALL_DIR}/kconf_update_bin)
++install(FILES kdeui.upd DESTINATION ${KCONF_UPDATE_INSTALL_DIR})
++
+ ########### install files ###############
+ 
+ if (Q_WS_MAC)
+diff --git a/kdeui/icons/kconf_update_migrate_from_kde3_icon_theme.cpp b/kdeui/icons/kconf_update_migrate_from_kde3_icon_theme.cpp
+new file mode 100644
+index 0000000..424786c
+--- /dev/null
++++ b/kdeui/icons/kconf_update_migrate_from_kde3_icon_theme.cpp
 @@ -0,0 +1,157 @@
 +/*
 +   Copyright (c) 2011, Modestas Vainius <modax@debian.org>
@@ -172,31 +198,11 @@ Index: kde4libs/kdeui/icons/kconf_update_migrate_from_kde3_icon_theme.cpp
 +
 +    return 0;
 +}
-Index: kde4libs/kdeui/CMakeLists.txt
-===================================================================
---- kde4libs.orig/kdeui/CMakeLists.txt	2015-02-16 10:18:58.304627273 +0100
-+++ kde4libs/kdeui/CMakeLists.txt	2015-02-16 10:18:58.304627273 +0100
-@@ -470,6 +470,16 @@
-                        )
- 
- install(TARGETS kdeui EXPORT kdelibsLibraryTargets ${INSTALL_TARGETS_DEFAULT_ARGS})
-+
-+# kconf_update to migrate from crystalsvg and the like KDE 4 incompatible icon
-+# themes when upgrading to KDE SC 4
-+kde4_add_executable(migrate_from_kde3_icon_theme icons/kconf_update_migrate_from_kde3_icon_theme.cpp)
-+target_link_libraries(migrate_from_kde3_icon_theme ${QT_QTCORE_LIBRARY}
-+                                                   ${KDE4_KDECORE_LIBRRY}
-+                                                   ${KDE4_KDEUI_LIBRARY})
-+install(TARGETS migrate_from_kde3_icon_theme DESTINATION ${LIB_INSTALL_DIR}/kconf_update_bin)
-+install(FILES kdeui.upd DESTINATION ${KCONF_UPDATE_INSTALL_DIR})
-+
- ########### install files ###############
- 
- if (Q_WS_MAC)
-Index: kde4libs/kdeui/kdeui.upd
-===================================================================
---- /dev/null	1970-01-01 00:00:00.000000000 +0000
-+++ kde4libs/kdeui/kdeui.upd	2015-02-16 10:18:58.304627273 +0100
+diff --git a/kdeui/kdeui.upd b/kdeui/kdeui.upd
+new file mode 100644
+index 0000000..3dcb4fa
+--- /dev/null
++++ b/kdeui/kdeui.upd
 @@ -0,0 +1,6 @@
 +# Migrate from crystalsvg and similar KDE 4 incompatible icon themes
 +Id=kde4/migrate_from_kde3_icon_theme

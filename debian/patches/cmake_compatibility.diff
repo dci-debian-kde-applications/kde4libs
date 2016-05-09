@@ -1,8 +1,17 @@
-Index: kde4libs/cmake/modules/CMakeLists.txt
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Wed, 13 Apr 2016 16:40:35 +0200
+Subject: cmake_compatibility
+
 ===================================================================
---- kde4libs.orig/cmake/modules/CMakeLists.txt	2013-11-08 10:33:38.746426398 +0100
-+++ kde4libs/cmake/modules/CMakeLists.txt	2013-11-08 10:35:21.886297235 +0100
-@@ -171,8 +171,8 @@
+---
+ cmake/modules/CMakeLists.txt | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+diff --git a/cmake/modules/CMakeLists.txt b/cmake/modules/CMakeLists.txt
+index 94f8da0..ad42077 100644
+--- a/cmake/modules/CMakeLists.txt
++++ b/cmake/modules/CMakeLists.txt
+@@ -171,8 +171,8 @@ install(FILES ${cmakeFiles}
  #   file(APPEND ${CMAKE_CURRENT_BINARY_DIR}/remove_files.cmake "exec_program( ${CMAKE_COMMAND} ARGS -E remove ${_current_FILE} OUTPUT_VARIABLE _dummy)\n" )
  #endforeach ( _current_FILE)
  

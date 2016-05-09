@@ -1,3 +1,7 @@
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Wed, 13 Apr 2016 16:40:34 +0200
+Subject: hack_in_etc_kde4_in_kstandarddirs
+
 In the case of config files, we want a local sysadm dir added as well.
 
 The priorities is as follows:
@@ -9,12 +13,15 @@ The priorities is as follows:
 
 With this patch, we can also install all config files into /usr/ as they just can get
 overridden by adding new files to /etc/kde4 by the sysadm.
+---
+ kdecore/kernel/kstandarddirs.cpp | 4 ++++
+ 1 file changed, 4 insertions(+)
 
-Index: kde4libs/kdecore/kernel/kstandarddirs.cpp
-===================================================================
---- kde4libs.orig/kdecore/kernel/kstandarddirs.cpp	2014-02-05 14:54:48.376405206 +0100
-+++ kde4libs/kdecore/kernel/kstandarddirs.cpp	2014-02-05 14:54:48.372405112 +0100
-@@ -1167,6 +1167,10 @@
+diff --git a/kdecore/kernel/kstandarddirs.cpp b/kdecore/kernel/kstandarddirs.cpp
+index 181b5d0..7bfa7cb 100644
+--- a/kdecore/kernel/kstandarddirs.cpp
++++ b/kdecore/kernel/kstandarddirs.cpp
+@@ -1167,6 +1167,10 @@ QStringList KStandardDirs::KStandardDirsPrivate::resourceDirs(const char* type,
                          if ((local || testdir.exists()) && !candidates.contains(path, cs))
                              candidates.append(path);
                      }

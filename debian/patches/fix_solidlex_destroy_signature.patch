@@ -1,8 +1,17 @@
-Index: kde4libs/solid/solid/predicate_parser.y
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Wed, 13 Apr 2016 16:40:35 +0200
+Subject: fix_solidlex_destroy_signature
+
 ===================================================================
---- kde4libs.orig/solid/solid/predicate_parser.y	2014-05-27 15:29:09.432005425 +0200
-+++ kde4libs/solid/solid/predicate_parser.y	2014-05-29 14:00:02.842756395 +0200
-@@ -12,7 +12,7 @@
+---
+ solid/solid/predicate_parser.y | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/solid/solid/predicate_parser.y b/solid/solid/predicate_parser.y
+index 04de2e1..583dcb2 100644
+--- a/solid/solid/predicate_parser.y
++++ b/solid/solid/predicate_parser.y
+@@ -12,7 +12,7 @@ typedef void* yyscan_t;
  void Soliderror(const char *s);
  int Solidlex( YYSTYPE *yylval, yyscan_t scanner );
  int Solidlex_init( yyscan_t *scanner );
