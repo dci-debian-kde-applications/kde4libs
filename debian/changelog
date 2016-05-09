@@ -1,10 +1,13 @@
-kde4libs (4:4.14.19-1~1.gbp3aaac0) UNRELEASED; urgency=medium
+kde4libs (4:4.14.19-1~2.gbpadc6e1) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @3aaac07cbbe0815c2805540d7184b13bd2ec9633 **
+  ** SNAPSHOT build @adc6e1ca45aa681cde0768cd207c3883ef91e8b4 **
 
   [ Maximiliano Curia ]
   * Add new patch: set_cmake_policies.patch (Closes: #809532) Thanks to
     Steve M. Robbins
+  * Replace the "Historical name" ddeb-migration by its "Modern, clearer" replacement dbgsym-migration.
+  * Add upstream metadata (DEP-12)
+  * debian/control: Update Vcs-Browser and Vcs-Git fields
 
   [ Rohan Garg ]
   * New upstream release (4.14.18)
@@ -17,7 +20,7 @@ kde4libs (4:4.14.19-1~1.gbp3aaac0) UNRELEASED; urgency=medium
   * Update symbols files.
   * UNRELEASED
 
- -- Automatic packaging <jenkins@amadeus.gnuservers.com.ar>  Thu, 21 Apr 2016 03:26:40 +0200
+ -- Maximiliano Curia <maxy@gnuservers.com.ar>  Mon, 09 May 2016 12:25:33 +0200
 
 kde4libs (4:4.14.16-1) experimental; urgency=medium
 
