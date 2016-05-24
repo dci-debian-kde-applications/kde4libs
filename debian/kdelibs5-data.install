@@ -239,7 +239,6 @@ usr/share/kde4/services/qimageioplugins/eps.desktop
 usr/share/kde4/services/qimageioplugins/gif.desktop
 usr/share/kde4/services/qimageioplugins/hdr.desktop
 usr/share/kde4/services/qimageioplugins/ico.desktop
-usr/share/kde4/services/qimageioplugins/jp2.desktop
 usr/share/kde4/services/qimageioplugins/jpeg.desktop
 usr/share/kde4/services/qimageioplugins/mng.desktop
 usr/share/kde4/services/qimageioplugins/pbm.desktop
