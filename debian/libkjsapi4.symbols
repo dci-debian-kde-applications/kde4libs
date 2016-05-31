@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.14.18 amd64 armhf i386
+# SymbolsHelper-Confirmed: 4:4.14.20 alpha amd64 arm64 armel armhf hppa hurd-i386 i386 kfreebsd-amd64 kfreebsd-i386 mips mips64el mipsel powerpc ppc64 ppc64el s390x sparc64 x32
 libkjs.so.4 libkjsapi4 #MINVER#
 * Build-Depends-Package: kdelibs5-dev
  _ZN3KJS10Identifier11addSlowCaseEPNS_7UString3RepE@Base 4:4.3.4
@@ -129,6 +129,12 @@ libkjs.so.4 libkjsapi4 #MINVER#
  _ZN3KJS17CommonIdentifiers6sharedEv@Base 4:4.3.4
  _ZN3KJS17CommonIdentifiersC1Ev@Base 4:4.3.4
  _ZN3KJS17CommonIdentifiersC2Ev@Base 4:4.3.4
+ _ZN3KJS17FunctionPrototype14callAsFunctionEPNS_9ExecStateEPNS_8JSObjectERKNS_4ListE@Base 4:4.14.20
+ _ZN3KJS17FunctionPrototypeC1EPNS_9ExecStateE@Base 4:4.14.20
+ _ZN3KJS17FunctionPrototypeC2EPNS_9ExecStateE@Base 4:4.14.20
+ _ZN3KJS17FunctionPrototypeD0Ev@Base 4:4.14.20
+ _ZN3KJS17FunctionPrototypeD1Ev@Base 4:4.14.20
+ _ZN3KJS17FunctionPrototypeD2Ev@Base 4:4.14.20
  _ZN3KJS17PropertyNameArray3addERKNS_10IdentifierE@Base 4:4.3.4
  _ZN3KJS18PropertyDescriptor11setWritableEb@Base 4:4.10.80
  _ZN3KJS18PropertyDescriptor13setEnumerableEb@Base 4:4.10.80
@@ -447,6 +453,7 @@ libkjs.so.4 libkjsapi4 #MINVER#
  _ZTIN3KJS13PackageObjectE@Base 4:4.3.4
  _ZTIN3KJS14JSGlobalObjectE@Base 4:4.3.4
  _ZTIN3KJS15ObjectPrototypeE@Base 4:4.3.4
+ _ZTIN3KJS17FunctionPrototypeE@Base 4:4.14.20
  _ZTIN3KJS19InternalFunctionImpE@Base 4:4.3.4
  _ZTIN3KJS21StandardGlobalPackageE@Base 4:4.3.4
  _ZTIN3KJS6JSCellE@Base 4:4.3.4
@@ -461,6 +468,7 @@ libkjs.so.4 libkjsapi4 #MINVER#
  _ZTSN3KJS13PackageObjectE@Base 4:4.3.4
  _ZTSN3KJS14JSGlobalObjectE@Base 4:4.3.4
  _ZTSN3KJS15ObjectPrototypeE@Base 4:4.3.4
+ _ZTSN3KJS17FunctionPrototypeE@Base 4:4.14.20
  _ZTSN3KJS19InternalFunctionImpE@Base 4:4.3.4
  _ZTSN3KJS21StandardGlobalPackageE@Base 4:4.3.4
  _ZTSN3KJS6JSCellE@Base 4:4.3.4
@@ -474,6 +482,7 @@ libkjs.so.4 libkjsapi4 #MINVER#
  _ZTVN3KJS13PackageObjectE@Base 4:4.3.4
  _ZTVN3KJS14JSGlobalObjectE@Base 4:4.3.4
  _ZTVN3KJS15ObjectPrototypeE@Base 4:4.3.4
+ _ZTVN3KJS17FunctionPrototypeE@Base 4:4.14.20
  _ZTVN3KJS19InternalFunctionImpE@Base 4:4.3.4
  _ZTVN3KJS21StandardGlobalPackageE@Base 4:4.3.4
  _ZTVN3KJS6JSCellE@Base 4:4.3.4
