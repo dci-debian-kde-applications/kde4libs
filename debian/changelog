@@ -1,5 +1,9 @@
 kde4libs (4:4.14.20-4) UNRELEASED; urgency=medium
 
+  [ Pino Toscano ]
+  * Revert change in symbols file done by "Automatic packaging", which caused
+    the lack of kde-runtime automatic dependency in applications using kdelibs
+    v4.  Yay for anonymous *and* unreviewed changes!
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Tue, 07 Jun 2016 21:01:34 +0200
 
