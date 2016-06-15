@@ -1,6 +1,16 @@
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Wed, 15 Jun 2016 03:26:13 +0200
+Subject: solid_use_shortest_filepath
+
+---
+ .../solid/backends/udisks2/udisksstorageaccess.cpp | 31 +++++++++++++++-------
+ 1 file changed, 22 insertions(+), 9 deletions(-)
+
+diff --git a/solid/solid/backends/udisks2/udisksstorageaccess.cpp b/solid/solid/backends/udisks2/udisksstorageaccess.cpp
+index 3104410..e9ee990 100644
 --- a/solid/solid/backends/udisks2/udisksstorageaccess.cpp
 +++ b/solid/solid/backends/udisks2/udisksstorageaccess.cpp
-@@ -74,6 +74,24 @@
+@@ -74,6 +74,24 @@ bool StorageAccess::isAccessible() const
      return m_device->isMounted();
  }
  
@@ -25,7 +35,7 @@
  QString StorageAccess::filePath() const
  {
      QByteArrayList mntPoints;
-@@ -84,18 +102,13 @@
+@@ -84,18 +102,13 @@ QString StorageAccess::filePath() const
              return QString();
          Device holderDevice(path);
          mntPoints = qdbus_cast<QByteArrayList>(holderDevice.prop("MountPoints"));
