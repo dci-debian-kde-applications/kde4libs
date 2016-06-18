@@ -1,0 +1,11 @@
+--- a/kdecore/tests/kmimetypetest.cpp
++++ b/kdecore/tests/kmimetypetest.cpp
+@@ -252,7 +252,7 @@
+     if (KStandardDirs::locate("icon", "oxygen/").isEmpty()) {
+         kWarning() << "oxygen not found";
+     } else {
+-        QString fh = KStandardDirs::locate( "icon", "oxygen/22x22/places/folder.png" );
++        QString fh = KStandardDirs::locate( "icon", "oxygen/base/22x22/places/folder.png" );
+         QVERIFY( !fh.isEmpty() ); // if the file doesn't exist, please fix the above to point to an existing icon
+         QTest::newRow("png image") << fh << "image/png";
+     }
