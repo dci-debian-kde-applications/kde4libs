@@ -1,10 +1,6 @@
-kde4libs (4:4.14.21-1~2.gbp2937b5) UNRELEASED; urgency=medium
-
-  ** SNAPSHOT build @2937b511c39fa36b8b229c2e2dce2f1801485c80 **
+kde4libs (4:4.14.21-1) unstable; urgency=medium
 
   [ Automatic packaging ]
-  ** SNAPSHOT build @dc7c31cb87f16917fc1052903aed880066050be3 **
-
   * Refresh patches
 
   [ Maximiliano Curia ]
@@ -12,7 +8,7 @@ kde4libs (4:4.14.21-1~2.gbp2937b5) UNRELEASED; urgency=medium
   * testsuite: use oxygen5
   * Add new patch: test_image-x-compressed-xcf.diff
 
- -- Maximiliano Curia <maxy@gnuservers.com.ar>  Sat, 18 Jun 2016 13:25:28 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Sun, 19 Jun 2016 09:26:22 +0200
 
 kde4libs (4:4.14.20-4) unstable; urgency=medium
 
