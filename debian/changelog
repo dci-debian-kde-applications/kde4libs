@@ -3,6 +3,7 @@ kde4libs (4:4.14.21-2~1.gbp87395c) UNRELEASED; urgency=medium
   ** SNAPSHOT build @87395c31efebd7a691ebab0594dd9d0cba4c2281 **
 
   * Add new upstream patch: upstream_fix_compilation_with_gcc6.patch
+    (Closes: 811895) Thanks to Martin Michlmayr for reporting.
   * Add new patch: fix_exception_specifier.diff
   * Add new patch: add_missing_cast.diff
 
