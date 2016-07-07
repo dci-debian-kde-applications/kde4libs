@@ -34,3 +34,4 @@ solid_use_shortest_filepath.diff
 use_an_oxygen5_file.diff
 test_image-x-compressed-xcf.diff
 upstream_fix_compilation_with_gcc6.patch
+fix_exception_specifier.diff

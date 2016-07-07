@@ -1,0 +1,16 @@
+--- a/kdecore/kdefakes.h.cmake
++++ b/kdecore/kdefakes.h.cmake
+@@ -174,10 +174,10 @@
+ #if !defined(HAVE_TRUNC)
+ #ifdef __cplusplus
+ extern "C" {
+-#endif
+-double trunc(double);
+-#ifdef __cplusplus
++double trunc(double) throw ();
+ }
++#else
++double trunc(double);
+ #endif
+ #endif
+ 
