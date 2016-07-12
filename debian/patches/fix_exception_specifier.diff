@@ -1,6 +1,16 @@
+From: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Date: Tue, 12 Jul 2016 21:27:33 +0200
+Subject: fix_exception_specifier
+
+---
+ kdecore/kdefakes.h.cmake | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+
+diff --git a/kdecore/kdefakes.h.cmake b/kdecore/kdefakes.h.cmake
+index a00388a..cb99316 100644
 --- a/kdecore/kdefakes.h.cmake
 +++ b/kdecore/kdefakes.h.cmake
-@@ -174,10 +174,10 @@
+@@ -174,10 +174,10 @@ int mkstemp(char *);
  #if !defined(HAVE_TRUNC)
  #ifdef __cplusplus
  extern "C" {
