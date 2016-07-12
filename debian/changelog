@@ -1,5 +1,8 @@
-kde4libs (4:4.14.21-2~1.gbp87395c) UNRELEASED; urgency=medium
+kde4libs (4:4.14.22-1~1.gbp6a119a) UNRELEASED; urgency=medium
 
+  ** SNAPSHOT build @6a119a510e6aec13b88a073ccc0e5a8a98c3cf03 **
+
+  [ Maximiliano Curia ]
   ** SNAPSHOT build @87395c31efebd7a691ebab0594dd9d0cba4c2281 **
 
   * Add new upstream patch: upstream_fix_compilation_with_gcc6.patch
@@ -7,7 +10,10 @@ kde4libs (4:4.14.21-2~1.gbp87395c) UNRELEASED; urgency=medium
   * Add new patch: fix_exception_specifier.diff
   * Add new patch: add_missing_cast.diff
 
- -- Maximiliano Curia <maxy@gnuservers.com.ar>  Thu, 07 Jul 2016 23:21:41 +0200
+  [ Automatic packaging ]
+  * Refresh patches
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Tue, 12 Jul 2016 21:27:50 +0200
 
 kde4libs (4:4.14.21-1) unstable; urgency=medium
 
