@@ -35,3 +35,4 @@ use_an_oxygen5_file.diff
 test_image-x-compressed-xcf.diff
 fix_exception_specifier.diff
 add_missing_cast.diff
+cve-2016-6232.patch
