@@ -1,19 +1,17 @@
-kde4libs (4:4.14.22-1~1.gbp6a119a) UNRELEASED; urgency=medium
-
-  ** SNAPSHOT build @6a119a510e6aec13b88a073ccc0e5a8a98c3cf03 **
+kde4libs (4:4.14.22-1) unstable; urgency=medium
 
   [ Maximiliano Curia ]
-  ** SNAPSHOT build @87395c31efebd7a691ebab0594dd9d0cba4c2281 **
-
   * Add new upstream patch: upstream_fix_compilation_with_gcc6.patch
     (Closes: 811895) Thanks to Martin Michlmayr for reporting.
   * Add new patch: fix_exception_specifier.diff
   * Add new patch: add_missing_cast.diff
+  * Add new patch: cve-2016-6232.patch
+    - Fixes: CVE-2016-6232
 
   [ Automatic packaging ]
   * Refresh patches
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Tue, 12 Jul 2016 21:27:50 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 19 Jul 2016 10:45:38 +0200
 
 kde4libs (4:4.14.21-1) unstable; urgency=medium
 
