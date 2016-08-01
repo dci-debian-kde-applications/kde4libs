@@ -1,5 +1,8 @@
 kde4libs (4:4.14.22-3) UNRELEASED; urgency=medium
 
+  [ Pino Toscano ]
+  * autopkgtest: switch from oxygen5-icon-theme back to the canonical
+    oxygen-icon-theme.
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 01 Aug 2016 22:16:14 +0200
 
