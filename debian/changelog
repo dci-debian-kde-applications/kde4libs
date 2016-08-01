@@ -1,3 +1,9 @@
+kde4libs (4:4.14.22-2) unstable; urgency=medium
+
+  * Fix the cve patch, so that it forces the target directory when the warning is issued.
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 01 Aug 2016 10:37:51 +0200
+
 kde4libs (4:4.14.22-1) unstable; urgency=medium
 
   [ Maximiliano Curia ]
