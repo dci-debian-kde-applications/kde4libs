@@ -10,12 +10,14 @@ kde4libs (4:4.14.22-3) UNRELEASED; urgency=medium
     patch assume_trunc.diff, which obsoletes the wrong patch
     fix_exception_specifier.diff.
   * Update symbols files.
+  * Wrap too long entry in changelog for version 4:4.14.22-2.
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 01 Aug 2016 22:16:14 +0200
 
 kde4libs (4:4.14.22-2) unstable; urgency=medium
 
-  * Fix the cve patch, so that it forces the target directory when the warning is issued.
+  * Fix the cve patch, so that it forces the target directory when the warning
+    is issued.
 
  -- Maximiliano Curia <maxy@debian.org>  Mon, 01 Aug 2016 10:37:51 +0200
 
