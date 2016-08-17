@@ -1,1 +1,0 @@
-libkpty4: hardening-no-fortify-functions usr/lib/libkpty.so.4.*

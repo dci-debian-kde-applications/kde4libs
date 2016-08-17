@@ -1,3 +1,2 @@
 kdelibs5-plugins: hardening-no-fortify-functions usr/lib/kde4/kio_file.so
-kdelibs5-plugins: hardening-no-fortify-functions usr/lib/kde4/kspell_hspell.so
 kdelibs5-plugins: hardening-no-fortify-functions usr/lib/kde4/libexec/ksendbugmail
