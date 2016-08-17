@@ -1,7 +1,7 @@
 kde4libs (4:4.4.4-1) unstable; urgency=low
 
   pkg-kde-tools has been dropped from kdelibs5-dev Depends. If your packages
-  need it at build time, please add it (appropriately versionned) to the
+  need it at build time, please add it (appropriately versioned) to the
   Build-Depends of your packages.
 
   HTML_INSTALL_DIR path has been switched from /usr/share/doc/kde4/HTML to

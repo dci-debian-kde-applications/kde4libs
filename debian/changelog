@@ -13,6 +13,7 @@ kde4libs (4:4.14.22-3) UNRELEASED; urgency=medium
   * Wrap too long entry in changelog for version 4:4.14.22-2.
   * Remove README.Debian, since all its content was obsolete already after
     Squeeze.
+  * Fix typo in NEWS file.
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 01 Aug 2016 22:16:14 +0200
 
