@@ -1,6 +1,6 @@
-kde4libs (4:4.14.22-3) UNRELEASED; urgency=medium
+kde4libs (4:4.14.22-3) unstable; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * autopkgtest: switch from oxygen5-icon-theme back to the canonical
     oxygen-icon-theme.
   * Backport upstream commit e9b25c7c040d8526fe8675b97d1067c8ffa7249f to fix
@@ -16,7 +16,7 @@ kde4libs (4:4.14.22-3) UNRELEASED; urgency=medium
   * Fix typo in NEWS file.
   * Update lintian overrides.
 
- -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 01 Aug 2016 22:16:14 +0200
+ -- Pino Toscano <pino@debian.org>  Wed, 17 Aug 2016 19:28:07 +0200
 
 kde4libs (4:4.14.22-2) unstable; urgency=medium
 
