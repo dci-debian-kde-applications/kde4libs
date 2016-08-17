@@ -1,4 +1,6 @@
-kde4libs (4:4.14.22-3) UNRELEASED; urgency=medium
+kde4libs (4:4.14.22-4~1.gbpae43ee) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @ae43eed3f6a279a512120c7eef54a070ebdd7ead **
 
   [ Pino Toscano ]
   * autopkgtest: switch from oxygen5-icon-theme back to the canonical
@@ -6,8 +8,9 @@ kde4libs (4:4.14.22-3) UNRELEASED; urgency=medium
   * Backport upstream commit e9b25c7c040d8526fe8675b97d1067c8ffa7249f to fix
     the symbols visibility with GCC >= 6; patch
     upstream_Fix-wrong-value-of-__KDE_HAVE_GCC_VISIBILITY-on-syst.patch.
+  * fix symbols visibility with GCC >= 6
 
- -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 01 Aug 2016 22:16:14 +0200
+ -- Pino Toscano <pino@debian.org>  Wed, 17 Aug 2016 18:25:28 +0200
 
 kde4libs (4:4.14.22-2) unstable; urgency=medium
 
