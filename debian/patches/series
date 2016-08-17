@@ -36,3 +36,4 @@ test_image-x-compressed-xcf.diff
 fix_exception_specifier.diff
 add_missing_cast.diff
 cve-2016-6232.patch
+upstream_Fix-wrong-value-of-__KDE_HAVE_GCC_VISIBILITY-on-syst.patch
