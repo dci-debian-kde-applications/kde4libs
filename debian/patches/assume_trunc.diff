@@ -1,0 +1,23 @@
+Author: Pino Toscano <pino@debian.org>
+Description: Skip the detection of "trunc", and assume it exists
+ Apparently the CMake code to detect the prototype of "trunc" fails with
+ GCC >= 6; since in Debian GNU libc is used, which provides "trunc" already,
+ skip the detection and set "trunc" as found.
+ .
+ This avoids adding a custom "trunc" implementation to kdefakes.
+Origin: vendor
+Forwarded: not-needed
+Last-Update: 2016-08-17
+
+--- a/ConfigureChecks.cmake
++++ b/ConfigureChecks.cmake
+@@ -238,7 +238,8 @@ check_prototype_exists(unsetenv stdlib.h
+ check_prototype_exists(usleep unistd.h              HAVE_USLEEP_PROTO)
+ check_prototype_exists(initgroups "unistd.h;sys/types.h;unistd.h;grp.h" HAVE_INITGROUPS_PROTO)
+ check_prototype_exists(setreuid unistd.h            HAVE_SETREUID_PROTO)
+-check_prototype_exists(trunc math.h                 HAVE_TRUNC)
++#check_prototype_exists(trunc math.h                 HAVE_TRUNC)
++set(HAVE_TRUNC TRUE)
+ 
+ # check for existing datatypes
+ 
