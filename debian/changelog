@@ -9,6 +9,7 @@ kde4libs (4:4.14.22-3) UNRELEASED; urgency=medium
   * Fix the trunc detection, to avoid adding an implementation to kdefakes;
     patch assume_trunc.diff, which obsoletes the wrong patch
     fix_exception_specifier.diff.
+  * Update symbols files.
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Mon, 01 Aug 2016 22:16:14 +0200
 
