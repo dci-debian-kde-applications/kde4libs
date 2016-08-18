@@ -1,6 +1,7 @@
-kde4libs (4:4.14.22-4) UNRELEASED; urgency=medium
+kde4libs (4:4.14.23-0r1) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
+  * New upstream release.
   * Disable the support for Strigi, since it is not developed anymore:
     - make it not required anymore; patch optional_strigi.diff
     - drop the libstreamanalyzer-dev build dependency
