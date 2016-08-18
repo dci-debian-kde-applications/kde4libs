@@ -1,4 +1,4 @@
-# SymbolsHelper-Confirmed: 4:4.14.22 amd64
+# SymbolsHelper-Confirmed: 4:4.14.22 amd64 armel armhf
 libkhtml.so.5 libkhtml5 #MINVER#
 * Build-Depends-Package: kdelibs5-dev
  _ZN11KHTMLGlobal10finalCheckEv@Base 4:4.3.4
@@ -1826,9 +1826,9 @@ libkhtml.so.5 libkhtml5 #MINVER#
  _ZN3DOMeqERKNS_9DOMStringERK7QString@Base 4:4.3.4
  _ZN3DOMeqERKNS_9DOMStringES2_@Base 4:4.3.4
  (optional=private|arch=!armel !armhf)_ZN3KJS6JSCell4markEv@Base 4:4.3.4
- _ZN3KJS7JSValueD0Ev@Base 4:4.3.4
- _ZN3KJS7JSValueD1Ev@Base 4:4.3.4
- _ZN3KJS7JSValueD2Ev@Base 4:4.7.2
+ (optional=private|arch=!armel !armhf)_ZN3KJS7JSValueD0Ev@Base 4:4.14.22
+ (optional=private|arch=!armel !armhf)_ZN3KJS7JSValueD1Ev@Base 4:4.14.22
+ (optional=private|arch=!armel !armhf)_ZN3KJS7JSValueD2Ev@Base 4:4.14.22
  _ZN3KJS7UStringC1ERK7QString@Base 4:4.3.4
  _ZN3KJS7UStringC1ERKN3DOM9DOMStringE@Base 4:4.3.4
  _ZN3KJS7UStringC2ERK7QString@Base 4:4.3.4
@@ -2224,6 +2224,7 @@ libkhtml.so.5 libkhtml5 #MINVER#
  _ZN9KHTMLViewD1Ev@Base 4:4.3.4
  _ZN9KHTMLViewD2Ev@Base 4:4.3.4
  (optional=templinst)_ZNK12KConfigGroup9readCheckIbEET_PKcRKS1_@Base 4:4.6.2
+ (optional=templinst|arch=armel)_ZNK12KConfigGroup9readCheckIiEET_PKcRKS1_@Base 4:4.14.22
  _ZNK13KHTMLSettings10lookupFontEi@Base 4:4.3.4
  _ZNK13KHTMLSettings10vLinkColorEv@Base 4:4.3.4
  _ZNK13KHTMLSettings11dnsPrefetchEv@Base 4:4.3.4
