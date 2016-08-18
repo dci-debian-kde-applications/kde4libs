@@ -1,5 +1,9 @@
 kde4libs (4:4.14.22-4) UNRELEASED; urgency=medium
 
+  [ Pino Toscano ]
+  * Disable the support for Strigi, since it is not developed anymore:
+    - make it not required anymore; patch optional_strigi.diff
+    - drop the libstreamanalyzer-dev build dependency
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 18 Aug 2016 06:20:40 +0200
 
