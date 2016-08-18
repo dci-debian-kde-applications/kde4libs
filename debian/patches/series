@@ -37,3 +37,4 @@ add_missing_cast.diff
 cve-2016-6232.patch
 assume_trunc.diff
 optional_strigi.diff
+upstream_kio-fix-KFileMetaInfo-without-strigi.patch
