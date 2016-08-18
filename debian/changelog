@@ -1,6 +1,6 @@
-kde4libs (4:4.14.23-0r1) UNRELEASED; urgency=medium
+kde4libs (4:4.14.23-1) unstable; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * New upstream release.
   * Disable the support for Strigi, since it is not developed anymore:
     - make it not required anymore; patch optional_strigi.diff
@@ -13,7 +13,7 @@ kde4libs (4:4.14.23-0r1) UNRELEASED; urgency=medium
     - upstream_Fix-wrong-value-of-__KDE_HAVE_GCC_VISIBILITY-on-syst.patch:
       drop, backported from upstream
 
- -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 18 Aug 2016 06:20:40 +0200
+ -- Pino Toscano <pino@debian.org>  Thu, 18 Aug 2016 19:35:21 +0200
 
 kde4libs (4:4.14.22-3) unstable; urgency=medium
 
