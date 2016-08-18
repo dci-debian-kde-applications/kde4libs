@@ -35,6 +35,5 @@ use_an_oxygen5_file.diff
 test_image-x-compressed-xcf.diff
 add_missing_cast.diff
 cve-2016-6232.patch
-upstream_Fix-wrong-value-of-__KDE_HAVE_GCC_VISIBILITY-on-syst.patch
 assume_trunc.diff
 optional_strigi.diff

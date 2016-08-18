@@ -6,6 +6,9 @@ kde4libs (4:4.14.23-0r1) UNRELEASED; urgency=medium
     - make it not required anymore; patch optional_strigi.diff
     - drop the libstreamanalyzer-dev build dependency
   * Update symbols files.
+  * Update the patches:
+    - upstream_Fix-wrong-value-of-__KDE_HAVE_GCC_VISIBILITY-on-syst.patch:
+      drop, backported from upstream
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Thu, 18 Aug 2016 06:20:40 +0200
 
