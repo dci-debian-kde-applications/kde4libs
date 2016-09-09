@@ -1,10 +1,11 @@
-kde4libs (4:4.14.23-2~1.gbp9e465a) UNRELEASED; urgency=medium
+kde4libs (4:4.14.24-1~1.gbp16b519) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @9e465a20c2803e06f10e12240f0eb350c2a94ed9 **
+  ** SNAPSHOT build @16b5190271cd74311f41506dd5479f6fa19332f4 **
 
   * Update symbols files with the buildds results
+  * Refresh patches
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Fri, 26 Aug 2016 10:24:48 +0200
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Fri, 09 Sep 2016 14:13:14 +0200
 
 kde4libs (4:4.14.23-1) unstable; urgency=medium
 
