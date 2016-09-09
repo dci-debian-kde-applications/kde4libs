@@ -52,7 +52,7 @@ index 0a66f52..e2c3276 100644
  set(KDE4_BIN_INSTALL_DIR     \"${KDE4_BIN_INSTALL_DIR}\")
  set(KDE4_SBIN_INSTALL_DIR    \"${KDE4_SBIN_INSTALL_DIR}\")
 diff --git a/cmake/modules/FindKDE4Internal.cmake b/cmake/modules/FindKDE4Internal.cmake
-index 4e39208..765e68e 100644
+index fc4f167..417dc23 100644
 --- a/cmake/modules/FindKDE4Internal.cmake
 +++ b/cmake/modules/FindKDE4Internal.cmake
 @@ -843,6 +843,7 @@ else (WIN32)

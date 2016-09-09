@@ -1,14 +1,22 @@
-Author: Antonio Rojas <nqn1976@gmail.com>
-Description: Allow building without strigi on Linux
- Now that kde-workspace is obsolete and kdelibs is only used by some still
- unported applications, it doesn't make sense to force using strigi anymore.
- This will allow dropping this old unmaintained library from distributions.
+From: Antonio Rojas <nqn1976@gmail.com>
+Date: Fri, 9 Sep 2016 14:00:07 +0200
+Subject: Allow building without strigi on Linux
+
+Now that kde-workspace is obsolete and kdelibs is only used by some still
+unported applications, it doesn't make sense to force using strigi anymore.
+This will allow dropping this old unmaintained library from distributions.
+
 Frowarded: https://git.reviewboard.kde.org/r/127823/
 Last-Update: 2016-05-03
+---
+ CMakeLists.txt | 11 ++---------
+ 1 file changed, 2 insertions(+), 9 deletions(-)
 
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index c6697d2..458940b 100644
 --- a/CMakeLists.txt
 +++ b/CMakeLists.txt
-@@ -82,17 +82,10 @@ set_package_properties(ZLIB PROPERTIES D
+@@ -82,17 +82,10 @@ set_package_properties(ZLIB PROPERTIES DESCRIPTION "Support for gzip compressed
                        )
  
  find_package(Strigi 0.6.3)

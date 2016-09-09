@@ -12,7 +12,7 @@ icons.
  1 file changed, 2 insertions(+)
 
 diff --git a/cmake/modules/FindKDE4Internal.cmake b/cmake/modules/FindKDE4Internal.cmake
-index 7d54b9b..4e39208 100644
+index c345eca..fc4f167 100644
 --- a/cmake/modules/FindKDE4Internal.cmake
 +++ b/cmake/modules/FindKDE4Internal.cmake
 @@ -1170,11 +1170,13 @@ if (CMAKE_COMPILER_IS_GNUCXX)

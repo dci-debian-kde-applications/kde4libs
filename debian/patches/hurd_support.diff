@@ -10,7 +10,7 @@ Subject: hurd_support
  3 files changed, 10 insertions(+), 2 deletions(-)
 
 diff --git a/cmake/modules/FindKDE4Internal.cmake b/cmake/modules/FindKDE4Internal.cmake
-index 25dea15..36bd5b0 100644
+index f470cf8..00a5a45 100644
 --- a/cmake/modules/FindKDE4Internal.cmake
 +++ b/cmake/modules/FindKDE4Internal.cmake
 @@ -1192,8 +1192,8 @@ if (CMAKE_COMPILER_IS_GNUCXX)

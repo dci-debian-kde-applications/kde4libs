@@ -34,7 +34,5 @@ solid_use_shortest_filepath.diff
 use_an_oxygen5_file.diff
 test_image-x-compressed-xcf.diff
 add_missing_cast.diff
-cve-2016-6232.patch
 assume_trunc.diff
 optional_strigi.diff
-upstream_kio-fix-KFileMetaInfo-without-strigi.patch

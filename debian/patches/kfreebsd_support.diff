@@ -35,7 +35,7 @@ index 8d14171..73ef636 100644
        set(utmp utmpx)
        if (login_in_libutil)
 diff --git a/cmake/modules/FindKDE4Internal.cmake b/cmake/modules/FindKDE4Internal.cmake
-index 765e68e..25dea15 100644
+index 417dc23..f470cf8 100644
 --- a/cmake/modules/FindKDE4Internal.cmake
 +++ b/cmake/modules/FindKDE4Internal.cmake
 @@ -1065,7 +1065,7 @@ if (APPLE)
