@@ -35,4 +35,3 @@ use_an_oxygen5_file.diff
 test_image-x-compressed-xcf.diff
 add_missing_cast.diff
 assume_trunc.diff
-optional_strigi.diff
