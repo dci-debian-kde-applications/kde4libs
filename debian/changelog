@@ -1,12 +1,13 @@
-kde4libs (4:4.14.25-1~1.gbp20f9b3) UNRELEASED; urgency=medium
+kde4libs (4:4.14.25-1) unstable; urgency=medium
 
-  ** SNAPSHOT build @20f9b363da48f227947830cd5244ba9b0688a5e5 **
-
+  [ Automatic packaging ]
   * Update symbols files with the buildds results
   * Refresh patches
-  * Refresh patches
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Thu, 13 Oct 2016 21:27:55 +0200
+  [ Maximiliano Curia ]
+  * New upstream release (4.14.25)
+
+ -- Maximiliano Curia <maxy@debian.org>  Mon, 17 Oct 2016 19:32:08 +0200
 
 kde4libs (4:4.14.23-1) unstable; urgency=medium
 
