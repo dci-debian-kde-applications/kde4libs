@@ -16,14 +16,14 @@ Last-Update: 2016-08-17
  1 file changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/ConfigureChecks.cmake b/ConfigureChecks.cmake
-index 73ef636..3cf47e7 100644
+index db4bd76..3cf47e7 100644
 --- a/ConfigureChecks.cmake
 +++ b/ConfigureChecks.cmake
 @@ -238,7 +238,8 @@ check_prototype_exists(unsetenv stdlib.h            HAVE_UNSETENV_PROTO)
  check_prototype_exists(usleep unistd.h              HAVE_USLEEP_PROTO)
  check_prototype_exists(initgroups "unistd.h;sys/types.h;unistd.h;grp.h" HAVE_INITGROUPS_PROTO)
  check_prototype_exists(setreuid unistd.h            HAVE_SETREUID_PROTO)
--check_prototype_exists(trunc math.h                 HAVE_TRUNC)
+-check_prototype_exists(trunc math.h                 HAVE_TRUNC "(double (*)(double))")
 +#check_prototype_exists(trunc math.h                 HAVE_TRUNC)
 +set(HAVE_TRUNC TRUE)
  

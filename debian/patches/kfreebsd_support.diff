@@ -16,7 +16,7 @@ cmake.
  6 files changed, 34 insertions(+), 20 deletions(-)
 
 diff --git a/ConfigureChecks.cmake b/ConfigureChecks.cmake
-index 8d14171..73ef636 100644
+index a829251..db4bd76 100644
 --- a/ConfigureChecks.cmake
 +++ b/ConfigureChecks.cmake
 @@ -138,11 +138,11 @@ if (UNIX)

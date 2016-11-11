@@ -9,7 +9,7 @@ Bypass build time check as /dev/ptmx is alsways present at runtime.
  1 file changed, 1 insertion(+), 7 deletions(-)
 
 diff --git a/ConfigureChecks.cmake b/ConfigureChecks.cmake
-index 2729adb..8d14171 100644
+index 25c869e..a829251 100644
 --- a/ConfigureChecks.cmake
 +++ b/ConfigureChecks.cmake
 @@ -176,13 +176,7 @@ if (UNIX)
