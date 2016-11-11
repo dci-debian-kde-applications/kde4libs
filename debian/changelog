@@ -1,8 +1,9 @@
-kde4libs (4:4.14.26-1~1.gbp17a05b) UNRELEASED; urgency=medium
+kde4libs (4:4.14.26-1~2.gbp8229fb) UNRELEASED; urgency=medium
 
-  ** SNAPSHOT build @17a05bf064d370a24a132e469b26920be76497ad **
+  ** SNAPSHOT build @8229fb36bbe82bae3272a9becb6354f32af67210 **
 
   * Update symbols files with the buildds logs.
+  * Refresh patches
 
  -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Fri, 11 Nov 2016 17:03:41 +0100
 
