@@ -1,3 +1,11 @@
+kde4libs (4:4.14.26-1~1.gbp17a05b) UNRELEASED; urgency=medium
+
+  ** SNAPSHOT build @17a05bf064d370a24a132e469b26920be76497ad **
+
+  * Update symbols files with the buildds logs.
+
+ -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Fri, 11 Nov 2016 17:03:41 +0100
+
 kde4libs (4:4.14.25-1) unstable; urgency=medium
 
   [ Automatic packaging ]
