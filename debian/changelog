@@ -1,9 +1,15 @@
-kde4libs (4:4.14.26-1~2.gbp8229fb) UNRELEASED; urgency=medium
+kde4libs (4:4.14.26-1~3.gbp733c62) UNRELEASED; urgency=medium
 
+  ** SNAPSHOT build @733c62fc7795412cdade0bd934011a001be21653 **
+
+  [ Automatic packaging ]
   ** SNAPSHOT build @8229fb36bbe82bae3272a9becb6354f32af67210 **
 
   * Update symbols files with the buildds logs.
   * Refresh patches
+
+  [ Maximiliano Curia ]
+  * Build against libssl1.0-dev
 
  -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Fri, 11 Nov 2016 17:03:41 +0100
 
