@@ -1,15 +1,14 @@
-kde4libs (4:4.14.26-1~4.gbp2ed07b) UNRELEASED; urgency=medium
-
-  ** SNAPSHOT build @2ed07b51df40f5cb7ee13974540b65e90c7cfdb9 **
+kde4libs (4:4.14.26-1) unstable; urgency=medium
 
   [ Automatic packaging ]
   * Update symbols files with the buildds logs.
   * Refresh patches
 
   [ Maximiliano Curia ]
+  * New upstream release (4.14.26)
   * Build against libssl1.0-dev (Closes: 828363)
 
- -- Automatic packaging <maxy+jenkins@gnuservers.com.ar>  Fri, 11 Nov 2016 17:03:41 +0100
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 23 Nov 2016 21:07:46 +0100
 
 kde4libs (4:4.14.25-1) unstable; urgency=medium
 
