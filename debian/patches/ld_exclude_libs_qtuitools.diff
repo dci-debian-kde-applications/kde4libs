@@ -9,7 +9,7 @@ Subject: Exclude QtUiTools symbols from public libraries Currently,
  2 files changed, 5 insertions(+), 1 deletion(-)
 
 diff --git a/kjsembed/kjsembed/CMakeLists.txt b/kjsembed/kjsembed/CMakeLists.txt
-index 5824eba..bf22485 100644
+index 5824eba98b..bf22485e9b 100644
 --- a/kjsembed/kjsembed/CMakeLists.txt
 +++ b/kjsembed/kjsembed/CMakeLists.txt
 @@ -71,7 +71,8 @@ target_link_libraries(${KJSEMBEDLIBNAME} LINK_PRIVATE ${KDE4_KDECORE_LIBS} ${QT_
@@ -23,7 +23,7 @@ index 5824eba..bf22485 100644
  
  
 diff --git a/plasma/CMakeLists.txt b/plasma/CMakeLists.txt
-index b921438..5d6b635 100644
+index b9214388d7..5d6b635bb6 100644
 --- a/plasma/CMakeLists.txt
 +++ b/plasma/CMakeLists.txt
 @@ -279,6 +279,9 @@ target_link_libraries(plasma LINK_PRIVATE ${QT_QTUITOOLS_LIBRARY} ${QT_QTWEBKIT_

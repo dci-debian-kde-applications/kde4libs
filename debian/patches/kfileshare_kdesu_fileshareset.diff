@@ -7,7 +7,7 @@ Subject: kfileshare_kdesu_fileshareset
  1 file changed, 4 insertions(+), 2 deletions(-)
 
 diff --git a/kio/kio/kfileshare.cpp b/kio/kio/kfileshare.cpp
-index 82915a3..4f01556 100644
+index 82915a386e..4f01556f92 100644
 --- a/kio/kio/kfileshare.cpp
 +++ b/kio/kio/kfileshare.cpp
 @@ -239,17 +239,19 @@ bool KFileShare::setShared( const QString& path, bool shared )

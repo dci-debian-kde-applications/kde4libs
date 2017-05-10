@@ -15,7 +15,7 @@ Useful when upgrading from KDE 3 to KDE 4 because default KDE 3 theme
  create mode 100644 kdeui/kdeui.upd
 
 diff --git a/kdeui/CMakeLists.txt b/kdeui/CMakeLists.txt
-index d6ec8b4..4d99a51 100644
+index d6ec8b47e9..4d99a517c6 100644
 --- a/kdeui/CMakeLists.txt
 +++ b/kdeui/CMakeLists.txt
 @@ -470,6 +470,16 @@ set_target_properties(kdeui PROPERTIES VERSION ${KDE_NON_GENERIC_LIB_VERSION}
@@ -37,7 +37,7 @@ index d6ec8b4..4d99a51 100644
  if (Q_WS_MAC)
 diff --git a/kdeui/icons/kconf_update_migrate_from_kde3_icon_theme.cpp b/kdeui/icons/kconf_update_migrate_from_kde3_icon_theme.cpp
 new file mode 100644
-index 0000000..424786c
+index 0000000000..424786c584
 --- /dev/null
 +++ b/kdeui/icons/kconf_update_migrate_from_kde3_icon_theme.cpp
 @@ -0,0 +1,157 @@
@@ -200,7 +200,7 @@ index 0000000..424786c
 +}
 diff --git a/kdeui/kdeui.upd b/kdeui/kdeui.upd
 new file mode 100644
-index 0000000..3dcb4fa
+index 0000000000..3dcb4fa443
 --- /dev/null
 +++ b/kdeui/kdeui.upd
 @@ -0,0 +1,6 @@

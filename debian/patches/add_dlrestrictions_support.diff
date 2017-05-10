@@ -24,7 +24,7 @@ on all (or some) the targets.
  3 files changed, 51 insertions(+)
 
 diff --git a/cmake/modules/KDE4Macros.cmake b/cmake/modules/KDE4Macros.cmake
-index 26c4788..6a75f32 100644
+index 26c4788d59..6a75f321dd 100644
 --- a/cmake/modules/KDE4Macros.cmake
 +++ b/cmake/modules/KDE4Macros.cmake
 @@ -1078,10 +1078,14 @@ macro (KDE4_ADD_LIBRARY _target_NAME _lib_TYPE)
@@ -57,7 +57,7 @@ index 26c4788..6a75f32 100644
  macro(_KDE4_EXPORT_LIBRARY_DEPENDENCIES _append_or_write _filename)
     message(FATAL_ERROR "_KDE4_EXPORT_LIBRARY_DEPENDENCIES() was an internal macro and has been removed again. Just remove the code which calls it, there is no substitute.")
 diff --git a/kdecore/CMakeLists.txt b/kdecore/CMakeLists.txt
-index 04221ff..ba1bab2 100644
+index 04221ff822..ba1bab2a59 100644
 --- a/kdecore/CMakeLists.txt
 +++ b/kdecore/CMakeLists.txt
 @@ -412,6 +412,14 @@ kde4_add_library(kdecore ${LIBRARY_TYPE} ${kdecore_LIB_SRCS})
@@ -76,7 +76,7 @@ index 04221ff..ba1bab2 100644
    target_link_libraries(kdecore LINK_PRIVATE ${WCECOMPAT_LIBRARIES} Ceshell.lib)
  endif(WINCE)
 diff --git a/kdecore/util/kpluginloader.cpp b/kdecore/util/kpluginloader.cpp
-index 43c6376..ad5d8de 100644
+index 43c6376cfc..ad5d8de5e6 100644
 --- a/kdecore/util/kpluginloader.cpp
 +++ b/kdecore/util/kpluginloader.cpp
 @@ -31,6 +31,14 @@

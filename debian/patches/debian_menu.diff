@@ -10,7 +10,7 @@ Patch by Sune Vuorela.
  1 file changed, 7 insertions(+)
 
 diff --git a/kded/applications.menu b/kded/applications.menu
-index 2537e39..dfa0f4f 100644
+index 2537e39e8d..dfa0f4f981 100644
 --- a/kded/applications.menu
 +++ b/kded/applications.menu
 @@ -437,5 +437,12 @@

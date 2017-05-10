@@ -8,7 +8,7 @@ Subject: kubuntu_raise_after_drkonqi
  1 file changed, 36 insertions(+), 1 deletion(-)
 
 diff --git a/kdeui/util/kcrash.cpp b/kdeui/util/kcrash.cpp
-index cf12933..851764b 100644
+index cf12933ff3..851764b581 100644
 --- a/kdeui/util/kcrash.cpp
 +++ b/kdeui/util/kcrash.cpp
 @@ -223,6 +223,39 @@ bool KCrash::isDrKonqiEnabled()

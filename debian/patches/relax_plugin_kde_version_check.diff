@@ -8,7 +8,7 @@ Subject: relax_plugin_kde_version_check
  2 files changed, 2 insertions(+), 4 deletions(-)
 
 diff --git a/kdecore/util/kpluginloader.cpp b/kdecore/util/kpluginloader.cpp
-index d93a5ee..43c6376 100644
+index d93a5ee984..43c6376cfc 100644
 --- a/kdecore/util/kpluginloader.cpp
 +++ b/kdecore/util/kpluginloader.cpp
 @@ -243,7 +243,6 @@ bool KPluginLoader::load()
@@ -20,7 +20,7 @@ index d93a5ee..43c6376 100644
          {
              d->errorString = i18n("The plugin '%1' uses an incompatible KDE library (%2).", d->name, QString::fromLatin1(d->verificationData->KDEVersionString));
 diff --git a/plasma/version.cpp b/plasma/version.cpp
-index 2fc56b9..1979726 100644
+index 2fc56b9490..1979726488 100644
 --- a/plasma/version.cpp
 +++ b/plasma/version.cpp
 @@ -58,12 +58,11 @@ bool isPluginVersionCompatible(unsigned int version)

@@ -8,7 +8,7 @@ Subject: default_kde4_xdg_menu_prefix
  2 files changed, 5 insertions(+), 4 deletions(-)
 
 diff --git a/kded/CMakeLists.txt b/kded/CMakeLists.txt
-index f1dfc76..4a663a7 100644
+index f1dfc767ec..4a663a70e8 100644
 --- a/kded/CMakeLists.txt
 +++ b/kded/CMakeLists.txt
 @@ -74,7 +74,7 @@ install(TARGETS kbuildsycoca4 ${INSTALL_TARGETS_DEFAULT_ARGS} )
@@ -21,7 +21,7 @@ index f1dfc76..4a663a7 100644
  install( FILES kdedmodule.desktop DESTINATION  ${SERVICETYPES_INSTALL_DIR} )
  install( FILES kded.upd           DESTINATION  ${DATA_INSTALL_DIR}/kconf_update )
 diff --git a/kded/vfolder_menu.cpp b/kded/vfolder_menu.cpp
-index cac42ef..b23003e 100644
+index cac42ef762..b23003e4c9 100644
 --- a/kded/vfolder_menu.cpp
 +++ b/kded/vfolder_menu.cpp
 @@ -774,8 +774,10 @@ VFolderMenu::locateMenuFile(const QString &fileName)

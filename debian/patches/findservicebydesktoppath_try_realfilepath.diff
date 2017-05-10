@@ -11,7 +11,7 @@ path is a symlink.
  2 files changed, 25 insertions(+), 8 deletions(-)
 
 diff --git a/kdecore/services/kservicefactory.cpp b/kdecore/services/kservicefactory.cpp
-index 834ff8b..606170d 100644
+index 834ff8b25c..606170ddf1 100644
 --- a/kdecore/services/kservicefactory.cpp
 +++ b/kdecore/services/kservicefactory.cpp
 @@ -124,22 +124,16 @@ KService::Ptr KServiceFactory::findServiceByDesktopName(const QString &_name)
@@ -68,7 +68,7 @@ index 834ff8b..606170d 100644
  {
      if (!m_menuIdDict) return KService::Ptr(); // Error!
 diff --git a/kdecore/services/kservicefactory.h b/kdecore/services/kservicefactory.h
-index 495f21d..1f12dce 100644
+index 495f21d3f2..1f12dcef7c 100644
 --- a/kdecore/services/kservicefactory.h
 +++ b/kdecore/services/kservicefactory.h
 @@ -121,6 +121,8 @@ protected:

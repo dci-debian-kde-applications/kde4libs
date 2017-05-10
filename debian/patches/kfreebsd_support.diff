@@ -16,7 +16,7 @@ cmake.
  6 files changed, 34 insertions(+), 20 deletions(-)
 
 diff --git a/ConfigureChecks.cmake b/ConfigureChecks.cmake
-index a829251..db4bd76 100644
+index a8292511be..db4bd7662d 100644
 --- a/ConfigureChecks.cmake
 +++ b/ConfigureChecks.cmake
 @@ -138,11 +138,11 @@ if (UNIX)
@@ -35,7 +35,7 @@ index a829251..db4bd76 100644
        set(utmp utmpx)
        if (login_in_libutil)
 diff --git a/cmake/modules/FindKDE4Internal.cmake b/cmake/modules/FindKDE4Internal.cmake
-index 417dc23..f470cf8 100644
+index 417dc2391e..f470cf816b 100644
 --- a/cmake/modules/FindKDE4Internal.cmake
 +++ b/cmake/modules/FindKDE4Internal.cmake
 @@ -1065,7 +1065,7 @@ if (APPLE)
@@ -73,7 +73,7 @@ index 417dc23..f470cf8 100644
     if (CMAKE_SYSTEM_NAME STREQUAL GNU)
        set (CMAKE_SHARED_LINKER_FLAGS "${CMAKE_SHARED_LINKER_FLAGS} -pthread")
 diff --git a/kio/kfile/kpropertiesdialog.cpp b/kio/kfile/kpropertiesdialog.cpp
-index 6611ee7..a6573aa 100644
+index 6611ee7e56..a6573aa4cd 100644
 --- a/kio/kfile/kpropertiesdialog.cpp
 +++ b/kio/kfile/kpropertiesdialog.cpp
 @@ -1894,7 +1894,15 @@ static bool fileSystemSupportsACL( const QByteArray& path )
@@ -94,7 +94,7 @@ index 6611ee7..a6573aa 100644
      return fileSystemSupportsACLs;
  }
 diff --git a/kioslave/file/file.cpp b/kioslave/file/file.cpp
-index 4ad1c7d..e5240cc 100644
+index 4ad1c7df2b..e5240ccf75 100644
 --- a/kioslave/file/file.cpp
 +++ b/kioslave/file/file.cpp
 @@ -310,8 +310,10 @@ void FileProtocol::get( const KUrl& url )
@@ -109,7 +109,7 @@ index 4ad1c7d..e5240cc 100644
      // Determine the mimetype of the file to be retrieved, and emit it.
      // This is mandatory in all slaves (for KRun/BrowserRun to work)
 diff --git a/kioslave/file/file_unix.cpp b/kioslave/file/file_unix.cpp
-index ca4cf3b..0f192d1 100644
+index ca4cf3baf4..0f192d1d12 100644
 --- a/kioslave/file/file_unix.cpp
 +++ b/kioslave/file/file_unix.cpp
 @@ -145,8 +145,10 @@ void FileProtocol::copy( const KUrl &srcUrl, const KUrl &destUrl,
@@ -135,7 +135,7 @@ index ca4cf3b..0f192d1 100644
  #ifdef HAVE_POSIX_ACL
      acl = acl_get_fd(src_fd);
 diff --git a/kpty/kpty.cpp b/kpty/kpty.cpp
-index 380eda5..0e7b90e 100644
+index 380eda54b8..0e7b90e049 100644
 --- a/kpty/kpty.cpp
 +++ b/kpty/kpty.cpp
 @@ -109,24 +109,24 @@ extern "C" {

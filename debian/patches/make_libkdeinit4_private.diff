@@ -32,7 +32,7 @@ libraries.
  11 files changed, 63 insertions(+), 5 deletions(-)
 
 diff --git a/CreateKDELibsDependenciesFile.cmake b/CreateKDELibsDependenciesFile.cmake
-index 0a66f52..e2c3276 100644
+index 0a66f5205a..e2c32766cc 100644
 --- a/CreateKDELibsDependenciesFile.cmake
 +++ b/CreateKDELibsDependenciesFile.cmake
 @@ -32,6 +32,7 @@ set(KDE4_INSTALL_DIR "${CMAKE_INSTALL_PREFIX}")
@@ -52,7 +52,7 @@ index 0a66f52..e2c3276 100644
  set(KDE4_BIN_INSTALL_DIR     \"${KDE4_BIN_INSTALL_DIR}\")
  set(KDE4_SBIN_INSTALL_DIR    \"${KDE4_SBIN_INSTALL_DIR}\")
 diff --git a/cmake/modules/FindKDE4Internal.cmake b/cmake/modules/FindKDE4Internal.cmake
-index fc4f167..417dc23 100644
+index fc4f167498..417dc2391e 100644
 --- a/cmake/modules/FindKDE4Internal.cmake
 +++ b/cmake/modules/FindKDE4Internal.cmake
 @@ -843,6 +843,7 @@ else (WIN32)
@@ -75,7 +75,7 @@ index fc4f167..417dc23 100644
  ###########    end of platform specific stuff  ##########################
  
 diff --git a/cmake/modules/KDE4Macros.cmake b/cmake/modules/KDE4Macros.cmake
-index 5bb2ffa..26c4788 100644
+index 5bb2ffa689..26c4788d59 100644
 --- a/cmake/modules/KDE4Macros.cmake
 +++ b/cmake/modules/KDE4Macros.cmake
 @@ -858,6 +858,17 @@ macro (KDE4_ADD_KDEINIT_EXECUTABLE _target_NAME )
@@ -97,7 +97,7 @@ index 5bb2ffa..26c4788 100644
     endif(WIN32)
  
 diff --git a/config-prefix.h.cmake b/config-prefix.h.cmake
-index 96dcf02..dc5b0c3 100644
+index 96dcf02b85..dc5b0c3ecc 100644
 --- a/config-prefix.h.cmake
 +++ b/config-prefix.h.cmake
 @@ -12,6 +12,7 @@
@@ -109,7 +109,7 @@ index 96dcf02..dc5b0c3 100644
  #define LIB_INSTALL_DIR "${LIB_INSTALL_DIR}"
  #define INCLUDE_INSTALL_DIR "${INCLUDE_INSTALL_DIR}"
 diff --git a/kdecore/kde-config.cpp b/kdecore/kde-config.cpp
-index 0501783..1972903 100644
+index 05017836d1..1972903cca 100644
 --- a/kdecore/kde-config.cpp
 +++ b/kdecore/kde-config.cpp
 @@ -144,6 +144,7 @@ int main(int argc, char **argv)
@@ -121,7 +121,7 @@ index 0501783..1972903 100644
              "include", I18N_NOOP("Includes/Headers"),
              "locale", I18N_NOOP("Translation files for KLocale"),
 diff --git a/kdecore/kernel/kstandarddirs.cpp b/kdecore/kernel/kstandarddirs.cpp
-index ab8f76d..181b5d0 100644
+index ab8f76d57a..181b5d06fa 100644
 --- a/kdecore/kernel/kstandarddirs.cpp
 +++ b/kdecore/kernel/kstandarddirs.cpp
 @@ -171,6 +171,8 @@ xdgconf-menu
@@ -152,7 +152,7 @@ index ab8f76d..181b5d0 100644
  
  static void tokenize(QStringList& token, const QString& str,
 diff --git a/kdecore/kernel/kstandarddirs_unix.cpp b/kdecore/kernel/kstandarddirs_unix.cpp
-index f8646ea..33694e9 100644
+index f8646eadcb..33694e9d54 100644
 --- a/kdecore/kernel/kstandarddirs_unix.cpp
 +++ b/kdecore/kernel/kstandarddirs_unix.cpp
 @@ -40,6 +40,8 @@ QString KStandardDirs::installPath(const char *type)
@@ -165,7 +165,7 @@ index f8646ea..33694e9 100644
          case 'd':
              if (strcmp("data", type) == 0)
 diff --git a/kdecore/kernel/kstandarddirs_win.cpp b/kdecore/kernel/kstandarddirs_win.cpp
-index b47aa15..95dfddd 100644
+index b47aa152ef..95dfddd243 100644
 --- a/kdecore/kernel/kstandarddirs_win.cpp
 +++ b/kdecore/kernel/kstandarddirs_win.cpp
 @@ -47,6 +47,8 @@ QString KStandardDirs::installPath(const char *type)
@@ -178,7 +178,7 @@ index b47aa15..95dfddd 100644
          case 'd':
              if (strcmp("data", type) == 0)
 diff --git a/kdecore/util/kpluginloader.cpp b/kdecore/util/kpluginloader.cpp
-index bcf39fa..d93a5ee 100644
+index bcf39faf6f..d93a5ee984 100644
 --- a/kdecore/util/kpluginloader.cpp
 +++ b/kdecore/util/kpluginloader.cpp
 @@ -113,6 +113,13 @@ QString findLibraryInternal(const QString &name, const KComponentData &cData)
@@ -196,7 +196,7 @@ index bcf39fa..d93a5ee 100644
      if (!libfile.isEmpty()) {
          if (!kdeinit) {
 diff --git a/kinit/CMakeLists.txt b/kinit/CMakeLists.txt
-index dcde429..5dde743 100644
+index dcde429ea6..5dde743ccc 100644
 --- a/kinit/CMakeLists.txt
 +++ b/kinit/CMakeLists.txt
 @@ -58,6 +58,17 @@ endif(Q_WS_X11)
@@ -218,7 +218,7 @@ index dcde429..5dde743 100644
  if (WIN32)
    set(kwrapper_SRCS kwrapper_win.cpp  )
 diff --git a/kinit/kinit.cpp b/kinit/kinit.cpp
-index e41845a..7f57d1b 100644
+index e41845ac39..7f57d1bad4 100644
 --- a/kinit/kinit.cpp
 +++ b/kinit/kinit.cpp
 @@ -498,11 +498,23 @@ static pid_t launch(int argc, const char *_name, const char *args,

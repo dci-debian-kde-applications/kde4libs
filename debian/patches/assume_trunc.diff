@@ -16,7 +16,7 @@ Last-Update: 2016-08-17
  1 file changed, 2 insertions(+), 1 deletion(-)
 
 diff --git a/ConfigureChecks.cmake b/ConfigureChecks.cmake
-index db4bd76..3cf47e7 100644
+index db4bd7662d..3cf47e7427 100644
 --- a/ConfigureChecks.cmake
 +++ b/ConfigureChecks.cmake
 @@ -238,7 +238,8 @@ check_prototype_exists(unsetenv stdlib.h            HAVE_UNSETENV_PROTO)

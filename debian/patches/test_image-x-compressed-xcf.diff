@@ -7,7 +7,7 @@ Subject: test_image-x-compressed-xcf
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/kdeui/tests/kiconloader_unittest.cpp b/kdeui/tests/kiconloader_unittest.cpp
-index b3d04e6..672d867 100644
+index b3d04e6916..672d867719 100644
 --- a/kdeui/tests/kiconloader_unittest.cpp
 +++ b/kdeui/tests/kiconloader_unittest.cpp
 @@ -216,7 +216,7 @@ private Q_SLOTS:

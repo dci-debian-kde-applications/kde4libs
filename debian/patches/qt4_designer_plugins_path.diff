@@ -8,7 +8,7 @@ Subject: qt4_designer_plugins_path
  1 file changed, 4 insertions(+), 4 deletions(-)
 
 diff --git a/kdewidgets/CMakeLists.txt b/kdewidgets/CMakeLists.txt
-index b88b12f..35b0370 100644
+index b88b12fe4c..35b0370653 100644
 --- a/kdewidgets/CMakeLists.txt
 +++ b/kdewidgets/CMakeLists.txt
 @@ -54,7 +54,7 @@ if(QT_QTDESIGNER_FOUND)

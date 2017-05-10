@@ -15,7 +15,7 @@ unreadable.
  1 file changed, 4 insertions(+), 4 deletions(-)
 
 diff --git a/kdecore/io/ktar.cpp b/kdecore/io/ktar.cpp
-index ed739e8..857e305 100644
+index ed739e8142..857e30529f 100644
 --- a/kdecore/io/ktar.cpp
 +++ b/kdecore/io/ktar.cpp
 @@ -745,7 +745,7 @@ bool KTar::doPrepareWriting(const QString &name, const QString &user,

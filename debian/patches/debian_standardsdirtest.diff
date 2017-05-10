@@ -8,7 +8,7 @@ Subject: debian_standardsdirtest
  1 file changed, 6 insertions(+), 6 deletions(-)
 
 diff --git a/kdecore/tests/kstandarddirstest.cpp b/kdecore/tests/kstandarddirstest.cpp
-index bc5c21d..893cf7b 100644
+index bc5c21da21..893cf7baf6 100644
 --- a/kdecore/tests/kstandarddirstest.cpp
 +++ b/kdecore/tests/kstandarddirstest.cpp
 @@ -105,7 +105,7 @@ void KStandarddirsTest::testFindResource()

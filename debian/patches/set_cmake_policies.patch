@@ -8,7 +8,7 @@ Subject: set_cmake_policies
  1 file changed, 9 insertions(+)
 
 diff --git a/cmake/modules/KDE4Macros.cmake b/cmake/modules/KDE4Macros.cmake
-index 6a75f32..39a2804 100644
+index 6a75f321dd..39a2804554 100644
 --- a/cmake/modules/KDE4Macros.cmake
 +++ b/cmake/modules/KDE4Macros.cmake
 @@ -1011,6 +1011,11 @@ endmacro(_KDE4_ADD_MANIFEST)

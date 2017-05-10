@@ -10,7 +10,7 @@ Subject: hurd_support
  3 files changed, 10 insertions(+), 2 deletions(-)
 
 diff --git a/cmake/modules/FindKDE4Internal.cmake b/cmake/modules/FindKDE4Internal.cmake
-index f470cf8..00a5a45 100644
+index f470cf816b..00a5a45068 100644
 --- a/cmake/modules/FindKDE4Internal.cmake
 +++ b/cmake/modules/FindKDE4Internal.cmake
 @@ -1192,8 +1192,8 @@ if (CMAKE_COMPILER_IS_GNUCXX)
@@ -25,7 +25,7 @@ index f470cf8..00a5a45 100644
  
     # gcc under Windows
 diff --git a/kdecore/kernel/kstandarddirs.cpp b/kdecore/kernel/kstandarddirs.cpp
-index 7bfa7cb..ed9faa7 100644
+index 7bfa7cb806..ed9faa74df 100644
 --- a/kdecore/kernel/kstandarddirs.cpp
 +++ b/kdecore/kernel/kstandarddirs.cpp
 @@ -79,6 +79,10 @@ static Qt::CaseSensitivity cs = Qt::CaseInsensitive;
@@ -40,7 +40,7 @@ index 7bfa7cb..ed9faa7 100644
  {
  public:
 diff --git a/kinit/lnusertemp.c b/kinit/lnusertemp.c
-index eaa68fe..b2ac15b 100644
+index eaa68fefd8..b2ac15b433 100644
 --- a/kinit/lnusertemp.c
 +++ b/kinit/lnusertemp.c
 @@ -36,6 +36,10 @@

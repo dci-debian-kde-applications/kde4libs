@@ -7,7 +7,7 @@ Subject: use_an_oxygen5_file
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/kdecore/tests/kmimetypetest.cpp b/kdecore/tests/kmimetypetest.cpp
-index 6f155b2..ddf2973 100644
+index 6f155b2936..ddf29737c3 100644
 --- a/kdecore/tests/kmimetypetest.cpp
 +++ b/kdecore/tests/kmimetypetest.cpp
 @@ -252,7 +252,7 @@ void KMimeTypeTest::testFindByPathUsingFileName_data()

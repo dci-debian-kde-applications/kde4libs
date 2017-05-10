@@ -7,7 +7,7 @@ Subject: glibc_filesystem
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/kdecore/io/kfilesystemtype_p.cpp b/kdecore/io/kfilesystemtype_p.cpp
-index 158f51d..3bb1539 100644
+index 158f51db29..3bb1539cd8 100644
 --- a/kdecore/io/kfilesystemtype_p.cpp
 +++ b/kdecore/io/kfilesystemtype_p.cpp
 @@ -56,7 +56,7 @@ KFileSystemType::Type determineFileSystemTypeImpl(const QByteArray& path)

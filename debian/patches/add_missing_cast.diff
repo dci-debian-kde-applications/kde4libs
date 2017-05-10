@@ -7,7 +7,7 @@ Subject: add_missing_cast
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/khtml/ecma/kjs_traversal.cpp b/khtml/ecma/kjs_traversal.cpp
-index 5f37658..3e8cd31 100644
+index 5f37658027..3e8cd319ce 100644
 --- a/khtml/ecma/kjs_traversal.cpp
 +++ b/khtml/ecma/kjs_traversal.cpp
 @@ -134,7 +134,7 @@ const ClassInfo NodeFilterConstructor::info = { "NodeFilterConstructor", 0, &Nod

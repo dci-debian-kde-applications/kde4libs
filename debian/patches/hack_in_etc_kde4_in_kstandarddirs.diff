@@ -18,7 +18,7 @@ overridden by adding new files to /etc/kde4 by the sysadm.
  1 file changed, 4 insertions(+)
 
 diff --git a/kdecore/kernel/kstandarddirs.cpp b/kdecore/kernel/kstandarddirs.cpp
-index 181b5d0..7bfa7cb 100644
+index 181b5d06fa..7bfa7cb806 100644
 --- a/kdecore/kernel/kstandarddirs.cpp
 +++ b/kdecore/kernel/kstandarddirs.cpp
 @@ -1167,6 +1167,10 @@ QStringList KStandardDirs::KStandardDirsPrivate::resourceDirs(const char* type,

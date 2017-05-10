@@ -8,7 +8,7 @@ Subject: fix_solidlex_destroy_signature
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/solid/solid/predicate_parser.y b/solid/solid/predicate_parser.y
-index 04de2e1..583dcb2 100644
+index 04de2e1f80..583dcb2423 100644
 --- a/solid/solid/predicate_parser.y
 +++ b/solid/solid/predicate_parser.y
 @@ -12,7 +12,7 @@ typedef void* yyscan_t;

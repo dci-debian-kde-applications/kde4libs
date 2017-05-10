@@ -10,7 +10,7 @@ Inspired from http://lists.kde.org/?l=kde-commits&m=122713720905453&w=2
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/kpty/kptydevice.cpp b/kpty/kptydevice.cpp
-index 1579780..a6422b0 100644
+index 1579780e43..a6422b0726 100644
 --- a/kpty/kptydevice.cpp
 +++ b/kpty/kptydevice.cpp
 @@ -44,7 +44,7 @@

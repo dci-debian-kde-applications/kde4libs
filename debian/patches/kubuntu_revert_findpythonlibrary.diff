@@ -8,7 +8,7 @@ Subject: kubuntu_revert_findpythonlibrary
  1 file changed, 1 insertion(+), 1 deletion(-)
 
 diff --git a/cmake/modules/FindPythonLibrary.cmake b/cmake/modules/FindPythonLibrary.cmake
-index 78309b7..a1894b4 100644
+index 78309b7d56..a1894b4c54 100644
 --- a/cmake/modules/FindPythonLibrary.cmake
 +++ b/cmake/modules/FindPythonLibrary.cmake
 @@ -34,7 +34,7 @@ find_package(PythonInterp)
