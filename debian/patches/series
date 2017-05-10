@@ -36,3 +36,4 @@ test_image-x-compressed-xcf.diff
 add_missing_cast.diff
 assume_trunc.diff
 java-set-names-in-permission-dialog.patch
+cmake-look-for-hunspell-1.6-as-well.patch
