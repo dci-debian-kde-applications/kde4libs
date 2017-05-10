@@ -39,3 +39,4 @@ java-set-names-in-permission-dialog.patch
 cmake-look-for-hunspell-1.6-as-well.patch
 Sanitize-URLs-before-passing-them-to-FindProxyForURL.patch
 khtml-Delete-pointer-_before_-returning.patch
+http-slave-send-error-page-after-authorization-failure.patch
