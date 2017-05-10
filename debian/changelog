@@ -1,4 +1,4 @@
-kde4libs (4:4.14.26-2~) UNRELEASED; urgency=medium
+kde4libs (4:4.14.26-2) unstable; urgency=medium
 
   * Apply "java: set names in permission dialog" (bf0bd72)
     This makes sure the reply from the user is used and sent back.
@@ -18,10 +18,11 @@ kde4libs (4:4.14.26-2~) UNRELEASED; urgency=medium
   * Apply "http slave: send error page after authorization failure" (b6f2022)
     BUG: KDE#373323
     Backport from KF5 kio
-  * Apply "Verify that whoever is calling us is actually who he says he is" (264e976)
+  * Apply "Verify that whoever is calling us is actually who he says he is"
+    (264e976)
     Fixes CVE-2017-8422 in kde4libs
 
- -- Maximiliano Curia <maxy@gnuservers.com.ar>  Wed, 10 May 2017 15:10:35 +0200
+ -- Maximiliano Curia <maxy@debian.org>  Wed, 10 May 2017 16:24:00 +0200
 
 kde4libs (4:4.14.26-1) unstable; urgency=medium
 
