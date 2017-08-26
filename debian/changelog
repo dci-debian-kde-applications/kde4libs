@@ -1,3 +1,10 @@
+kde4libs (4:4.14.35-0r1) UNRELEASED; urgency=medium
+
+  [ Pino Toscano ]
+  * New upstream release.
+
+ -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 26 Aug 2017 13:30:20 +0200
+
 kde4libs (4:4.14.26-2) unstable; urgency=medium
 
   * Apply "java: set names in permission dialog" (bf0bd72)
