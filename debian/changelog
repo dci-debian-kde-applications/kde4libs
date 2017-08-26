@@ -1,6 +1,6 @@
-kde4libs (4:4.14.35-0r1) UNRELEASED; urgency=medium
+kde4libs (4:4.14.35-1) unstable; urgency=medium
 
-  [ Pino Toscano ]
+  * Team upload.
   * New upstream release:
     - fixes build with GCC >= 7 (Closes: #853472)
     - fixes build with cmake >= 3.9 (Closes: #870068)
@@ -19,7 +19,7 @@ kde4libs (4:4.14.35-0r1) UNRELEASED; urgency=medium
   * Fix typo in copyright.
   * Bump Standards-Version to 4.0.1, no changes required.
 
- -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 26 Aug 2017 13:30:20 +0200
+ -- Pino Toscano <pino@debian.org>  Sat, 26 Aug 2017 14:33:15 +0200
 
 kde4libs (4:4.14.26-2) unstable; urgency=medium
 
