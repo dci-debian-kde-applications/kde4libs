@@ -2,6 +2,18 @@ kde4libs (4:4.14.35-0r1) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
   * New upstream release.
+  * Update the patches:
+    - assume_trunc.diff: drop, obsolete
+    - java-set-names-in-permission-dialog.patch: drop, backported from upstream
+    - cmake-look-for-hunspell-1.6-as-well.patch: drop, backported from upstream
+    - Sanitize-URLs-before-passing-them-to-FindProxyForURL.patch: drop,
+      backported from upstream
+    - khtml-Delete-pointer-_before_-returning.patch: drop, backported from
+      upstream
+    - http-slave-send-error-page-after-authorization-failure.patch: drop,
+      backported from upstream
+    - Verify-that-whoever-is-calling-us-is-actually-who-he-says.patch: drop,
+      backported from upstream
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 26 Aug 2017 13:30:20 +0200
 

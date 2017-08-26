@@ -34,10 +34,3 @@ solid_use_shortest_filepath.diff
 use_an_oxygen5_file.diff
 test_image-x-compressed-xcf.diff
 add_missing_cast.diff
-assume_trunc.diff
-java-set-names-in-permission-dialog.patch
-cmake-look-for-hunspell-1.6-as-well.patch
-Sanitize-URLs-before-passing-them-to-FindProxyForURL.patch
-khtml-Delete-pointer-_before_-returning.patch
-http-slave-send-error-page-after-authorization-failure.patch
-Verify-that-whoever-is-calling-us-is-actually-who-he-says.patch
