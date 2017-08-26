@@ -17,6 +17,7 @@ kde4libs (4:4.14.35-0r1) UNRELEASED; urgency=medium
     - Verify-that-whoever-is-calling-us-is-actually-who-he-says.patch: drop,
       backported from upstream
   * Fix typo in copyright.
+  * Bump Standards-Version to 4.0.1, no changes required.
 
  -- Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>  Sat, 26 Aug 2017 13:30:20 +0200
 
