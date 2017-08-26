@@ -1,7 +1,9 @@
 kde4libs (4:4.14.35-0r1) UNRELEASED; urgency=medium
 
   [ Pino Toscano ]
-  * New upstream release.
+  * New upstream release:
+    - fixes build with GCC >= 7 (Closes: #853472)
+    - fixes build with cmake >= 3.9 (Closes: #870068)
   * Update the patches:
     - assume_trunc.diff: drop, obsolete
     - java-set-names-in-permission-dialog.patch: drop, backported from upstream
