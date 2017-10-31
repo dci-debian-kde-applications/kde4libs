@@ -3,12 +3,11 @@ Section: libs
 Priority: optional
 Maintainer: Debian/Kubuntu Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Uploaders: Sune Vuorela <sune@debian.org>,
-           Fathi Boudra <fabo@debian.org>,
            Modestas Vainius <modax@debian.org>,
            George Kiagiadakis <kiagiadakis.george@gmail.com>,
            Lisandro Damián Nicanor Pérez Meyer <lisandro@debian.org>,
            Maximiliano Curia <maxy@debian.org>,
-           Diane Trout <diane@debian.org>
+           Diane Trout <diane@debian.org>,
 Build-Depends: aspell,
                automoc (>= 1.0~version-0.9.88),
                bison,
