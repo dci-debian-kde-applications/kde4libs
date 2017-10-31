@@ -1,3 +1,10 @@
+kde4libs (4:4.14.36-2~) UNRELEASED; urgency=medium
+
+  * New revision
+  * Update uploaders list as requested by MIA team (Closes: #879320)
+
+ -- Maximiliano Curia <maxy@debian.org>  Tue, 31 Oct 2017 17:59:36 +0100
+
 kde4libs (4:4.14.36-1) unstable; urgency=medium
 
   * Team upload.
